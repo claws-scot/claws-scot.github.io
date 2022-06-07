@@ -29,7 +29,7 @@ navbar-links:
   Code:
     - Theory: "theory"
     - UML: "umls"
-    - Tutorials: "tutorials"
+    - Tutos: "tutorials"
   Gallery: "gallery"
   Contribute: "contribute"
   About:

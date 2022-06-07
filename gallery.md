@@ -32,7 +32,6 @@ nav-short: true
 </div>
 
 <br>
-<br>
 
 <!-- The dots/circles -->
 <div style="text-align:center">
@@ -41,6 +40,8 @@ nav-short: true
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
+<br>
+<br>
 
 <video height="600" autoplay>
   <source src="/docs/sb_aza/concentration.mp4" type="video/mp4">
