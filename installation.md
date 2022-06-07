@@ -51,7 +51,7 @@ Some of the following guidelines can be found at [opendrift.github.io/install](h
     </div>    
 3. Create environment with the required dependencies and install OpenDrift
     ```sh
-    conda config --add channels conda-forge  # recommended, but not necessary
+    conda config --add channels conda-forge
     conda env create -f environment.yml
     conda activate opendrift
     pip install -e .
