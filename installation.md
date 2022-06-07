@@ -72,7 +72,7 @@ Some of the following guidelines can be found at [opendrift.github.io/install](h
     ```sh
     gedit ~/.bashrc
     ```
-        <div style="line-height:50%;">
+    <div style="line-height:50%;">
         <br>
     </div>
     and add this line at the very bottom
