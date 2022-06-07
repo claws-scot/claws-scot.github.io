@@ -40,7 +40,9 @@ nav-short: true
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-<br>
+<div style="line-height:75%;">
+  <br>
+</div>
 
 <p align="center">
 <video height="600" autoplay>
