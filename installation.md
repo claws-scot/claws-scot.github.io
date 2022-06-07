@@ -39,8 +39,7 @@ nav-short: true
 
 Some of the following guidelines can be found at [opendrift.github.io/install](https://opendrift.github.io/install.html)
 
-1. Install miniconda3: [docs.conda.io/en/latest/miniconda](https://docs.conda.io/en/latest/miniconda.html)
-
+1. Install miniconda3: [docs.conda.io/en/latest/miniconda](https://docs.conda.io/en/latest/miniconda.html)  
 2. Clone the OpenDrift fork related to _CLAWS_
     ```sh
     git clone https://github.com/vincentcasseau/opendrift.git
@@ -68,21 +67,12 @@ Some of the following guidelines can be found at [opendrift.github.io/install](h
     <div style="line-height:50%;">
         <br>
     </div>
-5. Add the _CLAWS_ folder to your python path:   
+5. Add the _CLAWS_ Github repository folder to your python path:   
     ```sh
     gedit ~/.bashrc
+    export PYTHONPATH=$PYTHONPATH:/path/to/CLAWS/Github/repository/
     ```
-    <div style="line-height:50%;">
-        <br>
-    </div>
-    and add this line at the very bottom
-    ```sh
-    export PYTHONPATH=$PYTHONPATH:/path/to/directory/containing_python_module/
-    ```
-    <div style="line-height:50%;">
-        <br>
-    </div>
-    and then source your bashrc file
+    and source your .bashrc file
     ```sh
     source ~/.bashrc
     ```
