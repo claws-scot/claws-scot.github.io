@@ -72,14 +72,15 @@ Some of the following guidelines can be found at [opendrift.github.io/install](h
     gedit ~/.bashrc
     export PYTHONPATH=$PYTHONPATH:/path/to/CLAWS/Github/repository/
     ```
-    and source your .bashrc file
+6. Source your .bashrc file to complete the installation
     ```sh
     source ~/.bashrc
     ```
     <div style="line-height:50%;">
         <br>
     </div>
-6. Please do not forget to load conda everytime you want to use _CLAWS_   
+
+Please do not forget to load conda everytime you want to use _CLAWS_   
     ```sh
     conda activate opendrift
     ```
