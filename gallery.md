@@ -26,15 +26,6 @@ nav-short: true
     <div class="text">Peak Azamethiphos concentration</div>
   </div>
   
-  <div class="clawsslides">
-    <div class="solvernametext">CLAWS</div>
-    <video height="400" autoplay>
-    <source src="/docs/sb_aza/concentration.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video> 
-    <div class="text">Azamethiphos concentration</div>
-  </div>
-  
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -48,11 +39,16 @@ nav-short: true
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
 
+<video height="600" autoplay>
+  <source src="/docs/sb_aza/concentration.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
 
+
+<!-- Javascript for the slideshow -->
 <script>
 let slideIndex = Math.floor(Math.random() * 4);
 let timeoutms;
@@ -105,4 +101,3 @@ function showSlides() {
   }
 } 
 </script>
-
