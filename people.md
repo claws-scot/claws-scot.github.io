@@ -36,8 +36,7 @@ nav-short: true
 <!--</script>-->
 
 ---
-## _CLAWS_    
-_Developers_:   
+## Developers    
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
