@@ -39,7 +39,7 @@ nav-short: true
 </div>
 
 <br>
-<br>
+---
 
 <p align="center">
 <video height="600" autoplay>
