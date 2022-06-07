@@ -67,12 +67,11 @@ Some of the following guidelines can be found at [opendrift.github.io/install](h
     <div style="line-height:50%;">
         <br>
     </div>
-5. Add the _CLAWS_ Github repository folder to your python path:   
+5. Add the _CLAWS_ Github repository folder to your python path in ~/.bashrc:   
     ```sh
-    gedit ~/.bashrc
     export PYTHONPATH=$PYTHONPATH:/path/to/CLAWS/Github/repository/
     ```
-6. Source your .bashrc file to complete the installation
+6. Source your ~/.bashrc file to complete the installation
     ```sh
     source ~/.bashrc
     ```
@@ -81,6 +80,6 @@ Some of the following guidelines can be found at [opendrift.github.io/install](h
     </div>
 
 Please do not forget to load conda everytime you want to use _CLAWS_   
-    ```sh
-    conda activate opendrift
-    ```
+```sh
+conda activate opendrift
+```
