@@ -31,9 +31,7 @@ nav-short: true
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-<div style="line-height:150%;">
-  <br>
-</div>
+<br>
 
 <!-- The dots/circles -->
 <div style="text-align:center">
