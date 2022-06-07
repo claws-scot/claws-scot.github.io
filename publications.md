@@ -7,13 +7,13 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>PUBLICATIONS</header>
-  <a href="https://hystrath.github.io/publications/#guidelines">Guidelines</a>
-  <a href="https://hystrath.github.io/publications/#journal-articles">Journal articles</a>
-  <a href="https://hystrath.github.io/publications/#conference-papers">Conference papers</a>
-  <a href="https://hystrath.github.io/publications/#extended-abstracts">Extended abstracts</a>
-  <a href="https://hystrath.github.io/publications/#theses">Theses</a>
-  <a href="https://hystrath.github.io/publications/#technical-reports">Technical reports</a>
-  <a href="https://hystrath.github.io/publications/#presentation-slides">Presentation slides</a>
+  <a href="https://claws-scot.github.io/publications/#guidelines">Guidelines</a>
+  <a href="https://claws-scot.github.io/publications/#journal-articles">Journal articles</a>
+  <a href="https://claws-scot.github.io/publications/#conference-papers">Conference papers</a>
+  <a href="https://claws-scot.github.io/publications/#extended-abstracts">Extended abstracts</a>
+  <a href="https://claws-scot.github.io/publications/#theses">Theses</a>
+  <a href="https://claws-scot.github.io/publications/#technical-reports">Technical reports</a>
+  <a href="https://claws-scot.github.io/publications/#presentation-slides">Presentation slides</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
@@ -54,15 +54,15 @@ howpublished = {\url{https://github.com/vincentcasseau/hyStrath/}}
 <br>
 
 <p align="center">
-  <a class="btn btn-warning" href="https://hystrath.github.io/publications/" role="button"><b>All solvers</b></a>
+  <a class="btn btn-warning" href="https://claws-scot.github.io/publications/" role="button"><b>All solvers</b></a>
 
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hy2foam/" role="button"><i>hy2Foam</i></a>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hyfoam/" role="button"><i>hyFoam</i></a>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-arc/" role="button"><i>ARC</i></a>
+  <a class="btn btn-outline-dark" href="https://claws-scot.github.io/publications-hy2foam/" role="button"><i>hy2Foam</i></a>
+  <a class="btn btn-outline-dark" href="https://claws-scot.github.io/publications-hyfoam/" role="button"><i>hyFoam</i></a>
+  <a class="btn btn-outline-dark" href="https://claws-scot.github.io/publications-arc/" role="button"><i>ARC</i></a>
 
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-dsmcfoam/" role="button"><i>dsmcFoam+</i></a>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-pdfoam/" role="button"><i>pdFoam</i></a>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hyperfoam/" role="button"><i>hyperFoam</i></a>
+  <a class="btn btn-outline-dark" href="https://claws-scot.github.io/publications-dsmcfoam/" role="button"><i>dsmcFoam+</i></a>
+  <a class="btn btn-outline-dark" href="https://claws-scot.github.io/publications-pdfoam/" role="button"><i>pdFoam</i></a>
+  <a class="btn btn-outline-dark" href="https://claws-scot.github.io/publications-hyperfoam/" role="button"><i>hyperFoam</i></a>
 </p>
 
 <h3>JOURNAL ARTICLES</h3>
@@ -94,7 +94,7 @@ Re-entry Analysis," <i>31st International Symposium on Space Technology and Scie
 {: #theses }
   <p><b><i>hyperFoam</i></b> &nbsp; | &nbsp; D. E.R. Espinoza, "An Open-Source Hybrid CFD-DSMC Solver for High-Speed Flows," PhD thesis, University of Strathclyde, Glasgow (UK), <b>2018</b> &nbsp; <a href="https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-danielespinoza.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
   <p><b><i>ARC</i></b> &nbsp; | &nbsp; V. Renato, "Multi-dimensional Thermal Response & Permeability Characterization for Porous Ablative Materials," PhD thesis, University of Strathclyde, Glasgow (UK), <b>2018</b> &nbsp; <a href="https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-violarenato.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
-  <p><b><i>Eilmer3</i></b>, <b><i>Eilmer4</i></b> &nbsp; | &nbsp; J.-J. O.E. Hoste, "Scramjet Combustion Modeling using Eddy Dissipation Model," PhD thesis, University of Strathclyde, Glasgow (UK), <b>2018</b> &nbsp; <a href="https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-jimmyjohnhoste.pdf" target="_blank" style="color:orange"> [PDF→]</a> &nbsp; NB: <a href="http://cfcfd.mechmining.uq.edu.au/docs/tools/eilmer/"> Eilmer 3 </a> is a research and educational simulation code for 2D and 3D gas dynamics designed by Dr Peter Jacobs, Dr Rowan Gollan, Dr Daniel Potter and others (University of Queensland, Australia). See also the <a href="https://hystrath.github.io/tutos-hyfoam/#3-lorrains-scramjet"> tutorial case available on hyStrath</a> that uses <i>hyFoam</i></p>  
+  <p><b><i>Eilmer3</i></b>, <b><i>Eilmer4</i></b> &nbsp; | &nbsp; J.-J. O.E. Hoste, "Scramjet Combustion Modeling using Eddy Dissipation Model," PhD thesis, University of Strathclyde, Glasgow (UK), <b>2018</b> &nbsp; <a href="https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-jimmyjohnhoste.pdf" target="_blank" style="color:orange"> [PDF→]</a> &nbsp; NB: <a href="http://cfcfd.mechmining.uq.edu.au/docs/tools/eilmer/"> Eilmer 3 </a> is a research and educational simulation code for 2D and 3D gas dynamics designed by Dr Peter Jacobs, Dr Rowan Gollan, Dr Daniel Potter and others (University of Queensland, Australia). See also the <a href="https://claws-scot.github.io/tutos-hyfoam/#3-lorrains-scramjet"> tutorial case available on hyStrath</a> that uses <i>hyFoam</i></p>  
   <p><b><i>rhoCentralFoam</i></b>, <b><i>Eilmer3</i></b>, <b><i>hyFoam</i></b> &nbsp; | &nbsp; D. Puorto, "Suitability of rhoCentralFoam for Scramjet Internal Flows," Master's thesis, University of Naples Federico II, Naples (Italy), <b>2017</b></p>
   <p><b><i>pdFoam</i></b> &nbsp; | &nbsp;  C. J. Capon, "Ionospheric Aerodynamics in Low Earth Orbit," PhD thesis, University of New South Wales, Canberra (Australia), <b>2017</b> &nbsp; <a href="http://unsworks.unsw.edu.au/fapi/datastream/unsworks:46528/SOURCE01?view=true" target="_blank" style="color:orange"> [PDF→]</a></p> 
   <p><b><i>hyFoam</i></b>, <b><i>hy2Foam</i></b> &nbsp; | &nbsp;  V. Casseau, "An Open-Source CFD Solver for Planetary Entry," PhD thesis, University of Strathclyde, Glasgow (UK), <b>2017</b> &nbsp; <a href="https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-vincentcasseau.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>  

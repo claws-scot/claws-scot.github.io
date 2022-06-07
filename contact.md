@@ -7,7 +7,7 @@ nav-short: true
 **Enquiries: hystrath@gmail.com**    
 
 This e-mail address may be used if
-  - you would like to [contribute](https://hystrath.github.io/contributions/)
+  - you would like to [contribute](https://claws-scot.github.io/contributions/)
   - you would like to use the hyStrath platform for educational purposes
   - you need support in the form of consulting services   
 

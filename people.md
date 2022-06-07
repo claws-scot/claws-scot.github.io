@@ -7,10 +7,10 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>PEOPLE</header>
-  <a href="https://hystrath.github.io/people/#cfd-module--hyfoam-hy2foam">CFD module</a>
-  <a href="https://hystrath.github.io/people/#ablation-module--arc-not-released">Ablation module</a>
-  <a href="https://hystrath.github.io/people/#dsmc-module--dsmcfoam">DSMC module</a>
-  <a href="https://hystrath.github.io/people/#hybrid-modules--hyperfoam-pdfoam">Hybrid modules</a>
+  <a href="https://claws-scot.github.io/people/#cfd-module--hyfoam-hy2foam">CFD module</a>
+  <a href="https://claws-scot.github.io/people/#ablation-module--arc-not-released">Ablation module</a>
+  <a href="https://claws-scot.github.io/people/#dsmc-module--dsmcfoam">DSMC module</a>
+  <a href="https://claws-scot.github.io/people/#hybrid-modules--hyperfoam-pdfoam">Hybrid modules</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

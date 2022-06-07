@@ -7,13 +7,13 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>FLOW SOLVERS</header>
-  <a href="https://hystrath.github.io/solvers-hy2foam/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
-  <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming/">How-tos</a>
-  <a href="https://hystrath.github.io/tutos-hy2foam/">Tutorials</a>
+  <a href="https://claws-scot.github.io/solvers-hy2foam/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
+  <a href="https://claws-scot.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming/">How-tos</a>
+  <a href="https://claws-scot.github.io/tutos-hy2foam/">Tutorials</a>
   <a href="https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam">Source code</a>
-  <a href="https://hystrath.github.io/publications-hy2foam/">Publications</a>
-  <a href="https://hystrath.github.io/people/#cfd-module--hyfoam-hy2foam">Developers</a>
-  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
+  <a href="https://claws-scot.github.io/publications-hy2foam/">Publications</a>
+  <a href="https://claws-scot.github.io/people/#cfd-module--hyfoam-hy2foam">Developers</a>
+  <a href="https://claws-scot.github.io/disclaimer/">Disclaimer</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
