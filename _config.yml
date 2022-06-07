@@ -25,12 +25,6 @@ author: CLAWS
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Code:
-    - Theory: "theory"
-#    - hyFoam: "solvers-hyfoam"
-#    - dsmcFoam+: "solvers-dsmcfoam"
-#    - pdFoam: "solvers-pdfoam"
-#    - hyperFoam: "solvers-hyperfoam"
   Installation: "installation"
 #  How-tos:
 #    - CFD: "how-tos-cfd-fleming/how-tos-cfd-fleming"
@@ -39,6 +33,14 @@ navbar-links:
 #  Tutorials:
 #    - hy2Foam: "tutorials"
 #  Publications: "publications"
+  Code:
+    - Theory: "theory"
+    - UML: "umls"
+#    - hyFoam: "solvers-hyfoam"
+#    - dsmcFoam+: "solvers-dsmcfoam"
+#    - pdFoam: "solvers-pdfoam"
+#    - hyperFoam: "solvers-hyperfoam"
+  Gallery: "gallery"
   Contribute: "contribute"
   About:
     - People: "people"
