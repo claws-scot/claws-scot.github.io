@@ -13,3 +13,4 @@ This e-mail address may be used if
 
 This e-mail address should not be used to
   - report bugs, the [Issues](https://github.com/vincentcasseau/CLAWS/issues) page is there for this purpose  
+  - engage in group discussions or lay out a new project, please visit the dedicated [Discussions](https://github.com/vincentcasseau/CLAWS/discussions) and [Projects](https://github.com/vincentcasseau/CLAWS/projects?type=beta) pages on Github
