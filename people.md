@@ -37,17 +37,18 @@ nav-short: true
 
 ---
 ## Developers    
-* <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
-    <span class="fa-stack" aria-hidden="true">
-      <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
-      <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-    </span>
-    <span class="sr-only">LinkedIn</span>
-  </a> &nbsp; **Dr Vincent Casseau**, Consultant  
-<!--  &nbsp; <a href="/docs/CV-VincentCasseau.pdf" target="_blank" style="color:orange"> [CV→]</a>-->
 * <a style="text-decoration: none" href="https://www.researchgate.net/profile/Thomas_Scanlon" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fab fa-researchgate fa-stack-2x" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; **Dr Thomas J. Scanlon** BEng PhD CEng MIMechE, Lead Consultant at [MTS-CFD](https://www.mts-cfd.com/), Glasgow, UK
+* <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
+  <span class="fa-stack" aria-hidden="true">
+    <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
+    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+  </span>
+  <span class="sr-only">LinkedIn</span>
+</a> &nbsp; **Dr Vincent Casseau**, Consultant  
+<!--  &nbsp; <a href="/docs/CV-VincentCasseau.pdf" target="_blank" style="color:orange"> [CV→]</a>-->
+
