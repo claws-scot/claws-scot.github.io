@@ -42,7 +42,7 @@ nav-short: true
       <i class="fab fa-researchgate fa-stack-2x" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Dr Thomas J. Scanlon** BEng PhD CEng MIMechE, Lead Consultant at [MTS-CFD](https://www.mts-cfd.com/), Glasgow, UK
+  </a> &nbsp; **Dr Tom Scanlon** BEng PhD CEng MIMechE, Lead Consultant at [MTS-CFD](https://www.mts-cfd.com/), Glasgow, UK
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
   <span class="fa-stack" aria-hidden="true">
     <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
