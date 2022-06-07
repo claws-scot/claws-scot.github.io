@@ -31,7 +31,9 @@ nav-short: true
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-<br>
+<div style="line-height:75%;">
+  <br>
+</div>
 
 <!-- The dots/circles -->
 <div style="text-align:center">
@@ -40,9 +42,7 @@ nav-short: true
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-<div style="line-height:75%;">
-  <br>
-</div>
+<br>
 
 <p align="center">
 <video height="600" autoplay>
