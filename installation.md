@@ -79,7 +79,7 @@ Some of the following guidelinesare taken from [opendrift.github.io/install](htt
         <br>
     </div>
 
-Please do not forget to load conda everytime you want to use _CLAWS_   
+Please do not forget to load conda everytime you want to use _CLAWS_
 ```sh
 conda activate opendrift
 ```
