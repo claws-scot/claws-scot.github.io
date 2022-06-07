@@ -25,17 +25,12 @@ author: CLAWS
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-#  Flow Solvers:
-#    - hy2Foam: "solvers"
+  Code:
+    - Theory: "theory"
 #    - hyFoam: "solvers-hyfoam"
 #    - dsmcFoam+: "solvers-dsmcfoam"
 #    - pdFoam: "solvers-pdfoam"
 #    - hyperFoam: "solvers-hyperfoam"
-#  Download:
-#    - Compatibility: "compatibility"
-#    - Maintenance: "maintenance"
-#    - Installation: "installation"
-#    - Sync: "sync"
   Installation: "installation"
 #  How-tos:
 #    - CFD: "how-tos-cfd-fleming/how-tos-cfd-fleming"
@@ -44,11 +39,10 @@ navbar-links:
 #  Tutorials:
 #    - hy2Foam: "tutorials"
 #  Publications: "publications"
-#  About hS:
-#    - People: "people"
-#    - Contact: "contact"
-#    - Contribute: "contributions"
   Contribute: "contribute"
+  About:
+    - People: "people"
+    - Contact: "contact"
   License: "license"
 
 # --- Logo --- #

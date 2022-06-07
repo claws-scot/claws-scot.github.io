@@ -8,9 +8,8 @@ nav-short: true
 
 This e-mail address may be used if
   - you would like to [contribute](https://claws-scot.github.io/contributions/)
-  - you would like to use the hyStrath platform for educational purposes
+  - you would like to use CLAWS for educational purposes
   - you need support in the form of consulting services   
 
 This e-mail address should not be used to
-  - report bugs, the [Issues](https://github.com/vincentcasseau/hyStrath/issues) page is there for this purpose  
-  - seek for free OpenFOAM advice, please visit [CFD-Online](https://www.cfd-online.com/Forums/openfoam/) instead
+  - report bugs, the [Issues](https://github.com/vincentcasseau/CLAWS/issues) page is there for this purpose  
