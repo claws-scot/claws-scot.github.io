@@ -15,7 +15,6 @@ You will need to fill a _pull request_ and this can be achieved as follows:
     </div>  
 2. Open a terminal window and create a local copy of your _CLAWS_ repository   
     ```sh
-    cd $WM_PROJECT_USER_DIR  
     git clone https://github.com/USERNAME/CLAWS
     ``` 
     <div style="line-height:50%;">
@@ -34,7 +33,6 @@ You will need to fill a _pull request_ and this can be achieved as follows:
     </div>
 5. Once you are ready to commit and push your changes, type in
     ```
-    cd $WM_PROJECT_USER_DIR/CLAWS  
     git add PATH/TO/NEW/CONTENTS/  
     git commit -m 'AN_EXPLICIT_DESCRIPTION_OF_THE_CHANGES'  
     git push origin main  
