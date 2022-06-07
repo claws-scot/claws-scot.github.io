@@ -32,7 +32,9 @@ nav-short: true
 </div>
 
 <br>
-<br>
+<div style="line-height:50%;">
+  <br>
+</div>
 
 <!-- The dots/circles -->
 <div style="text-align:center">
