@@ -26,20 +26,10 @@ author: CLAWS
 
 navbar-links:
   Installation: "installation"
-#  How-tos:
-#    - CFD: "how-tos-cfd-fleming/how-tos-cfd-fleming"
-#    - DSMC: "how-tos-dsmc-fleming/how-tos-dsmc-fleming"
-#    - Hybrids: "how-tos-hybrids-fleming/how-tos-hybrids-fleming"
-#  Tutorials:
-#    - hy2Foam: "tutorials"
-#  Publications: "publications"
   Code:
     - Theory: "theory"
     - UML: "umls"
-#    - hyFoam: "solvers-hyfoam"
-#    - dsmcFoam+: "solvers-dsmcfoam"
-#    - pdFoam: "solvers-pdfoam"
-#    - hyperFoam: "solvers-hyperfoam"
+    - Tutorials: "tutorials"
   Gallery: "gallery"
   Contribute: "contribute"
   About:
