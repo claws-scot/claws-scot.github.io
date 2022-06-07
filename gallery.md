@@ -43,10 +43,12 @@ nav-short: true
 <br>
 <br>
 
+<p align="center">
 <video height="600" autoplay>
   <source src="/docs/sb_aza/concentration.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> 
+</p>
 
 
 <!-- Javascript for the slideshow -->
