@@ -31,7 +31,7 @@ nav-short: true
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-<div style="line-height:75%;">
+<div style="line-height:150%;">
   <br>
 </div>
 
