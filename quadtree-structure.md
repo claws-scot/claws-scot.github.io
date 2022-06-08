@@ -116,11 +116,7 @@ quadtree = {
     self.__leaf_to_seeding_area_ratio = leaf_to_seeding_area_ratio
 ```
 
-```python
-_quadtree_max_tolerated_depth = 4
-```
-
-
+The quadtree structure is disabled using the following setup:
 
 ```python
 # Quadtree structure
