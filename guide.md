@@ -38,9 +38,12 @@ if (localStorage.getItem("show_sidenav")) openNav()
 
 <p>The exponential decay formula describes the fate of a chemical substance over time and states that half of its initial quantity, `N_0`, will have vanished after one half-life, `t_{1/2}`, on average. It can be written as</p>
 
-<p>$$ N(t) = N_0 exp(-&#955; t), &nbsp;&nbsp;(1)$$</p>
-<!--    \label{eq:exponentialdecay}-->
-
+<div class="equation">
+  <equation class="equation__content">$$N(t) = N_0 exp(-&#955; t)\text{,}$$</equation>
+  <!--    \label{eq:exponentialdecay}-->
+  <div class="equation__number">(1)</div>
+</div>
+  
 <p>where `t` is the time and &#955; is the decay constant equal to</p>
 
 <!--[^1]: The decay constant can be viewed as the probability of a single particle to decay per unit time.-->
