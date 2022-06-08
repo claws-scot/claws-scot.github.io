@@ -43,9 +43,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <div class="equation__number">(1)</div>
 </div>
   
-<p>where `t` is the time and &#955; is the decay constant equal to</p>
-
-<!--[^1]: The decay constant can be viewed as the probability of a single particle to decay per unit time.-->
+<p>where `t` is the time and &#955; is the decay constant<sup><a href="#fn1" id="ref1">1</a></sup> equal to</p>
 
 <div class="equation">
   <equation class="equation__content">$$&#955; = \frac{ln(2)}{t_{1/2}}\text{.}$$</equation>
@@ -128,3 +126,7 @@ o.set_config('drift:half_life', 8.9*86400)
 ```
 
 <p>Please note that the half-life's default value is an infinite number which means that its implementation is transparent to any simulations that aren't using it.</p>
+
+<br>
+
+<sup id="fn1">1. [The decay constant can be viewed as the probability of a single particle to decay per unit time.]<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
