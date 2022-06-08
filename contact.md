@@ -4,7 +4,7 @@ title: Contact
 nav-short: true
 ---
 
-**Enquiries: hystrath@gmail.com**    
+**Enquiries: claws.scot@gmail.com**    
 
 This e-mail address may be used if
   - you would like to [contribute](https://claws-scot.github.io/contribute/)
