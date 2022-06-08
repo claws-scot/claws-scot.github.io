@@ -38,8 +38,8 @@ function reopenNav() {
 if (localStorage.getItem("show_sidenav")) openNav()
 </script>
 
-<p>Particles are binned into voxels of size `Dw^2 \times Dh`, where `Dw` is the bin's width and `Dh` is the bin's depth. These dimensions are constant throughout the entire domain. However, areas of high particle density could benefit from being further refined for greater accuracy and decreasing $Dw$ may not always be possible memory-wise.<br>
-The <i>get_lonlat_bins</i> function presented in Listing 5 is thus revised in Listing 7 to accommodate a quadtree histogram structure whereby a `2 x 2` sub-histogram is created for root and parent histogram bins selected for refinement. A sub-histogram has the following properties:</p>
+<p>Particles are binned into voxels of size `Dw^2 \times Dh`, where `Dw` is the bin's width and `Dh` is the bin's depth. These dimensions are constant throughout the entire domain. However, areas of high particle density could benefit from being further refined for greater accuracy and decreasing `Dw` may not always be possible memory-wise.<br>
+The <i>get_lonlat_bins</i> function presented in Listing 5 is thus revised in Listing 7 to accommodate a quadtree histogram structure whereby a `2 \times 2` sub-histogram is created for root and parent histogram bins selected for refinement. A sub-histogram has the following properties:</p>
 
 - a child histogram's bounding box is exactly that of the parent histogram bin marked for refinement;
 - a child histogram's bin depth is the same as the parent histogram (hence a quadtree and not an octree);
