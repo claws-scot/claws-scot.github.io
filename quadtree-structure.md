@@ -121,6 +121,7 @@ class Quadtree(object):
         self.__leaf_to_seeding_area_ratio = leaf_to_seeding_area_ratio
 ```
 
+#### No Quadtree    
 The quadtree structure is disabled using the following setup:
 
 ```python
@@ -128,6 +129,7 @@ The quadtree structure is disabled using the following setup:
 quadtree = NoQuadtree()
 ```
 
+#### Method #1    
 <p>There are a total of five methods. In the first method, the root bin width, `Dw_r`, is defined by the user, and a minimum number of particles per bin is set to decide whether a bin can be subdivided.
 The maximum depth of the quadtree is also set.</p>
 
@@ -136,6 +138,7 @@ The maximum depth of the quadtree is also set.</p>
 quadtree = M1Quadtree(max_depth=2, min_particles_per_bin=100)
 ```
 
+#### Method #2    
 <p>In the second method, the leaf bin width, `Dw_l`, is set by the user and the  maximum quadtree depth is derived as</p>
 
 <div class="equation">
@@ -150,6 +153,7 @@ quadtree = M1Quadtree(max_depth=2, min_particles_per_bin=100)
 quadtree = M2Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
 ```
 
+#### Method #3    
 <p>In the third method, the root bin width is computed using a target concentration, `C_\text{target}`, in ng/L, as</p>
 
 <div class="equation">
@@ -164,6 +168,7 @@ quadtree = M2Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
 quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, input_conc_units='ng/L')
 ```
 
+#### Method #4  
 <p>The fourth method combines methods #2 and #3: the root bin width is calculated from a target concentration and the leaf bin width is set.</p>
 
 ```python
@@ -171,6 +176,7 @@ quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, input_c
 quadtree = M4Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_bin_width=25, input_conc_units='ng/L')
 ```
 
+#### Method #5    
 <p>Finally, the fifth method is similar to method #4 but for the leaf bin width that is computed from a prescribed leaf-to-seeding-area ratio, `f`, as</p>
 
 <div class="equation">
