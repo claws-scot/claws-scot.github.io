@@ -74,7 +74,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 ### 6. Quadtrees
 
 <p align="center">
-<img src="/docs/UML/sites.png" width="800">
+<img src="/docs/UML/quadtrees.png" width="800">
 </p>
 
 ### 7. Probe
