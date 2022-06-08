@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Guide
-subtitle: Chemical decay
 nav-short: true
 ---
 

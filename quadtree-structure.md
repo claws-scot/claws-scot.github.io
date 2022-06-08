@@ -116,7 +116,9 @@ quadtree = {
     # seeding area of a reference seeding location. default is 5.0
     "leaf_to_seeding_area_ratio": 5.0,
 
+```
 
+```python
 _quadtree_max_tolerated_depth = 4
 ```
 
