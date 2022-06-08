@@ -43,9 +43,9 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <div class="equation__number">(1)</div>
 </div>
   
-<p>where `t` is the time and &#955; is the decay constant<a href="#fn1">1</a> equal to</p>
+<p>where `t` is the time and &#955; is the decay constant<a href="#fn1"><sup>1</sup></a> equal to</p>
 <!--<a href="#fn1" id="ref1">1</a>-->
-<sup>1</sup>
+<!--<sup>1</sup>-->
 
 <div class="equation">
   <equation class="equation__content">$$&#955; = \frac{ln(2)}{t_{1/2}}\text{.}$$</equation>
