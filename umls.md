@@ -40,8 +40,8 @@ nav-short: true
 <img src="/docs/UML/sites.png" width="800">
 </p>
 
-### Probes
+### Probe
 
 <p align="center">
-<img src="/docs/UML/probes.png" width="800">
+<img src="/docs/UML/probe.png" width="800">
 </p>
