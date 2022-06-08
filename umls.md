@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Theory
+title: UML diagrams
 nav-short: true
 ---
 
@@ -8,7 +8,7 @@ nav-short: true
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>CODE</header>
   <a href="https://claws-scot.github.io/theory"><b>Theory</b></a>
-  <a href="https://hystrath.github.io/umls" style="background-color:#FFCCCC"><b>UMLs</b></a>
+  <a href="https://hystrath.github.io/umls" style="background-color:#FFCCCC"><b>UML diagrams</b></a>
   <a href="https://claws-scot.github.io/umls/#1-sites" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Sites</a>
   <a href="https://claws-scot.github.io/umls/#2-lochs" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Lochs</a>
   <a href="https://claws-scot.github.io/umls/#3-chemicals" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Chemicals</a>
