@@ -43,7 +43,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <div class="equation__number">(1)</div>
 </div>
   
-<p>where `t` is the time and &#955; is the decay constant<sup><a href="#fn1" id="ref1">1</a></sup> equal to</p>
+<p>where `t` is the time and &#955; is the decay constant<sup>1</sup> equal to</p>
 
 <div class="equation">
   <equation class="equation__content">$$&#955; = \frac{ln(2)}{t_{1/2}}\text{.}$$</equation>
@@ -53,14 +53,14 @@ if (localStorage.getItem("show_sidenav")) openNav()
 <p>From a Lagrangian standpoint, the probability of a particle to decay during a time interval &#916;`t` can be expressed as</p>
 
 <div class="equation">
-  <equation class="equation__content">$$P_{decay} = &#955; &#916;t\text{,}$$</equation>
+  <equation class="equation__content">$$P_{\text{decay}} = &#955; &#916;t\text{,}$$</equation>
   <div class="equation__number">(3)</div>
 </div>
 
 <p>and a particle decays if</p>
 
 <div class="equation">
-  <equation class="equation__content">$$R < P_{decay}\text{,}$$</equation>
+  <equation class="equation__content">$$R < P_{\text{decay}}\text{,}$$</equation>
   <div class="equation__number">(4)</div>
 </div>
 
@@ -129,4 +129,4 @@ o.set_config('drift:half_life', 8.9*86400)
 
 <br>
 
-<sup id="fn1">1. The decay constant can be viewed as the probability of a single particle to decay per unit time.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+<sup id="fn1">1. The decay constant can be viewed as the probability of a single particle to decay per unit time.<a href="#ref1" title="Jump back to footnote 1 in the text.">&#8617;</a></sup>
