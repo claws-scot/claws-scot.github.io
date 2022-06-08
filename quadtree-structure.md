@@ -126,10 +126,8 @@ _quadtree_max_tolerated_depth = 4
 The maximum depth of the quadtree is also set.</p>
 
 ```python
-# Quadtree structure parameters
-od_mtscfd.quadtree["quadtree"] = True
-od_mtscfd.quadtree["max_depth"] = 2
-od_mtscfd.quadtree["min_particles_per_bin"] = 100
+# Quadtree structure
+quadtree = M0Quadtree(max_depth=2, min_particles_per_bin=100)
 ```
 
 <p>In the second method, the leaf bin width, `Dw_l`, is set by the user and the  maximum quadtree depth is derived as</p>
@@ -142,11 +140,8 @@ od_mtscfd.quadtree["min_particles_per_bin"] = 100
 <p>The rest is similar to method #1.</p>
 
 ```python
-# Quadtree structure parameters
-od_mtscfd.quadtree["quadtree"] = True
-od_mtscfd.quadtree["max_depth"] = 2
-od_mtscfd.quadtree["min_particles_per_bin"] = 100
-od_mtscfd.quadtree["leaf_bin_width"] = 25
+# Quadtree structure
+quadtree = M1Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
 ```
 
 <p>In the third method, the root bin width is computed using a target concentration, `C_\text{target}`, in ng/L, as</p>
@@ -159,22 +154,15 @@ od_mtscfd.quadtree["leaf_bin_width"] = 25
 <p>where `m_p` is the mass of chemical substance (in grams) represented by a single particle. The dictionary keys are given in the following Listing:</p>
 
 ```python
-# Quadtree structure parameters
-od_mtscfd.quadtree["quadtree"] = True
-od_mtscfd.quadtree["min_particles_per_bin"] = 100
-od_mtscfd.quadtree["variable_root_bin_width"] = True
-od_mtscfd.quadtree["concentration_target"] = 1
+# Quadtree structure
+quadtree = M2Quadtree(min_particles_per_bin=100, concentration_target=1, input_conc_units='ng/L')
 ```
 
 <p>The fourth method combines methods #2 and #3: the root bin width is calculated from a target concentration and the leaf bin width is set.</p>
 
 ```python
-# Quadtree structure parameters
-od_mtscfd.quadtree["quadtree"] = True
-od_mtscfd.quadtree["min_particles_per_bin"] = 100
-od_mtscfd.quadtree["variable_root_bin_width"] = True
-od_mtscfd.quadtree["concentration_target"] = 1
-od_mtscfd.quadtree["leaf_bin_width"] = 25
+# Quadtree structure
+quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_bin_width=25, input_conc_units='ng/L')
 ```
 
 <p>Finally, the fifth method is similar to method #4 but for the leaf bin width that is computed from a prescribed leaf-to-seeding-area ratio, `f`, as</p>
@@ -185,11 +173,6 @@ od_mtscfd.quadtree["leaf_bin_width"] = 25
 </div>
 
 ```python
-# Quadtree structure parameters
-od_mtscfd.quadtree["quadtree"] = True
-od_mtscfd.quadtree["min_particles_per_bin"] = 100
-od_mtscfd.quadtree["variable_root_bin_width"] = True
-od_mtscfd.quadtree["concentration_target"] = 1
-od_mtscfd.quadtree["variable_leaf_bin_width"] = True
-od_mtscfd.quadtree["leaf_to_seeding_area_ratio"] = 2
+# Quadtree structure
+quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_to_seeding_area_ratio=2, input_conc_units='ng/L')
 ```
