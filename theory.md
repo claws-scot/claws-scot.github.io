@@ -5,6 +5,36 @@ subtitle: Chemical decay
 nav-short: true
 ---
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
+  <header>CODE</header>
+  <a href="https://claws-scot.github.io/theory" style="background-color:#FFCCCC"><b>Theory</b></a>
+  <a href="https://claws-scot.github.io/umls"><b>UML diagrams</b></a>
+  <a href="https://claws-scot.github.io/tutorials"><b>Tutos</b></a>
+</div>
+
+<span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "210px";
+  document.getElementById("mySidenav").style.transition = "0s";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+  localStorage.removeItem('show_sidenav');
+}
+
+function reopenNav() {
+  document.getElementById("mySidenav").style.width = "210px";
+  document.getElementById("mySidenav").style.transition = "0.2s";
+  localStorage.setItem("show_sidenav", true);
+}
+
+if (localStorage.getItem("show_sidenav")) openNav()
+</script>
+
 <p>The exponential decay formula describes the fate of a chemical substance over time and states that half of its initial quantity, `N_0`, will have vanished after one half-life, `t_{1/2}`, on average. It can be written as</p>
 
 <p>$$ N(t) = N_0 exp(-&#955; t), $$ &nbsp;&nbsp;(1)</p>
