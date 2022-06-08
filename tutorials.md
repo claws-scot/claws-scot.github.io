@@ -9,7 +9,7 @@ nav-short: true
   <header>CODE</header>
   <a href="https://claws-scot.github.io/guide"><b>Guide</b></a>
   <a href="https://claws-scot.github.io/umls"><b>UML diagrams</b></a>
-  <a href="https://claws-scot.github.io/tutos" style="background-color:#FFCCCC"><b>Tutos</b></a>
+  <a href="https://claws-scot.github.io/tutorials" style="background-color:#FFCCCC"><b>Tutos</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
