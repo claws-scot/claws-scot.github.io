@@ -50,12 +50,7 @@ def get_lonlat_bins(self, pixelsize_m, **kwargs):
             lonmin, lonmax, latmin, latmax = kwargs['corners']
             [...]
         else:
-            latmin = self.latmin
-            latmax = self.latmax
-            lonmin = self.lonmin
-            lonmax = self.lonmax
-            
-        [...]    
+            [...]    
 ```
 
 <p> and a post-processing user script can be written to read each simulation's output file and generate heat maps, plots, etc.</p>
