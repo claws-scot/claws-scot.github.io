@@ -88,38 +88,43 @@ def get_lonlat_bins(self, pixelsize_m, **kwargs):
 
 ```python
 quadtree = {
-    # quadtree: bool; Whether or not to create a quadtree from the root
+    # is_active: bool; Whether or not to create a quadtree from the root
     # histogram. default is None (ie, not set)
-    "quadtree": None,
-    # max_depth: integer; Maximum quadtree depth. default is 0 (ie, no quadtree)
-    "max_depth": 0,
-    # min_particles_per_bin: integer; Number of particles per bin that triggers
-    # the creation of a child histogram within the bounds of a parent histogram.
-    # default is 1000
-    "min_particles_per_bin": 1000,
-    
-    # variable_root_bin_width: bool; Whether or not the root bin width can be
-    # edited automatically using a target concentration. default is False
-    "variable_root_bin_width": False,
+    self.__is_active = is_active
+    # max_depth: integer; Maximum quadtree depth. default is 0
+    # (ie, no quadtree)
+    self.__max_depth = max_quadtree_depth
+    # min_particles_per_bin: integer; Number of particles per bin that
+    # triggers the creation of a child histogram within the bounds of a
+    # parent histogram. default is 1000
+    self.__min_particles_per_bin = min_particles_per_bin
+    # variable_root_bin_width: bool; Whether or not the root bin width can
+    # be edited automatically using a target concentration. default is False
+    self.__variable_root_bin_width = variable_root_bin_width
     # concentration_target: float; Concentration target in ng/L to recompute
     # the root bin width. default is 1 ng/L
-    "concentration_target": 1.0,
-    
-    # leaf_bin_width: float; Set target value for the leaf bin width (meters).
-    # default is NaN
-    "leaf_bin_width": np.nan,
-    # variable_leaf_bin_width: bool; Whether or not the leaf bin width can be
-    # edited automatically using the ratio of the leaf bin area to the seeding
-    # area. default is False
-    "variable_leaf_bin_width": False,
+    self.__concentration_target = concentration_target
+    # leaf_bin_width: float; Set target value for the leaf bin width
+    # (meters). default is NaN
+    self.__leaf_bin_width = leaf_bin_width,
+    # variable_leaf_bin_width: bool; Whether or not the leaf bin width can
+    # be edited automatically using the ratio of the leaf bin area to the
+    # seeding area. default is False
+    self.__variable_leaf_bin_width = variable_leaf_bin_width
     # leaf_to_seeding_area_ratio: float; ratio of the leaf bin area to the
     # seeding area of a reference seeding location. default is 5.0
-    "leaf_to_seeding_area_ratio": 5.0,
-
+    self.__leaf_to_seeding_area_ratio = leaf_to_seeding_area_ratio
 ```
 
 ```python
 _quadtree_max_tolerated_depth = 4
+```
+
+
+
+```python
+# Quadtree structure
+quadtree = NoQuadtree()
 ```
 
 <p>There are a total of five methods. In the first method, the root bin width,`Dw_r`, is defined by the user, and a minimum number of particles per bin is set to decide whether a bin can be subdivided.
@@ -127,7 +132,7 @@ The maximum depth of the quadtree is also set.</p>
 
 ```python
 # Quadtree structure
-quadtree = M0Quadtree(max_depth=2, min_particles_per_bin=100)
+quadtree = M1Quadtree(max_depth=2, min_particles_per_bin=100)
 ```
 
 <p>In the second method, the leaf bin width, `Dw_l`, is set by the user and the  maximum quadtree depth is derived as</p>
@@ -141,7 +146,7 @@ quadtree = M0Quadtree(max_depth=2, min_particles_per_bin=100)
 
 ```python
 # Quadtree structure
-quadtree = M1Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
+quadtree = M2Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
 ```
 
 <p>In the third method, the root bin width is computed using a target concentration, `C_\text{target}`, in ng/L, as</p>
@@ -155,14 +160,14 @@ quadtree = M1Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
 
 ```python
 # Quadtree structure
-quadtree = M2Quadtree(min_particles_per_bin=100, concentration_target=1, input_conc_units='ng/L')
+quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, input_conc_units='ng/L')
 ```
 
 <p>The fourth method combines methods #2 and #3: the root bin width is calculated from a target concentration and the leaf bin width is set.</p>
 
 ```python
 # Quadtree structure
-quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_bin_width=25, input_conc_units='ng/L')
+quadtree = M4Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_bin_width=25, input_conc_units='ng/L')
 ```
 
 <p>Finally, the fifth method is similar to method #4 but for the leaf bin width that is computed from a prescribed leaf-to-seeding-area ratio, `f`, as</p>
@@ -174,5 +179,5 @@ quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_bi
 
 ```python
 # Quadtree structure
-quadtree = M3Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_to_seeding_area_ratio=2, input_conc_units='ng/L')
+quadtree = M5Quadtree(min_particles_per_bin=100, concentration_target=1, leaf_to_seeding_area_ratio=2, input_conc_units='ng/L')
 ```
