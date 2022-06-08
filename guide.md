@@ -129,4 +129,4 @@ o.set_config('drift:half_life', 8.9*86400)
 
 <br>
 
-<sup id="fn1">1. [The decay constant can be viewed as the probability of a single particle to decay per unit time.]<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+<sup id="fn1">1. The decay constant can be viewed as the probability of a single particle to decay per unit time.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
