@@ -37,24 +37,24 @@ if (localStorage.getItem("show_sidenav")) openNav()
 
 <p>The exponential decay formula describes the fate of a chemical substance over time and states that half of its initial quantity, `N_0`, will have vanished after one half-life, `t_{1/2}`, on average. It can be written as</p>
 
-<p>$$ N(t) = N_0 exp(-&#955; t), $$ &nbsp;&nbsp;(1)</p>
+<p>$$ N(t) = N_0 exp(-&#955; t), &nbsp;&nbsp;(1)$$</p>
 <!--    \label{eq:exponentialdecay}-->
 
 <p>where `t` is the time and &#955; is the decay constant equal to</p>
 
 <!--[^1]: The decay constant can be viewed as the probability of a single particle to decay per unit time.-->
 
-<p>$$ &#955; = \frac{ln(2)}{t_{1/2}}. $$ &nbsp;&nbsp;(2)</p>
+<p>$$ &#955; = \frac{ln(2)}{t_{1/2}}. &nbsp;&nbsp;(2)$$</p>
 <!--    \label{eq:decayconstant}-->
 
 <p>From a Lagrangian standpoint, the probability of a particle to decay during a time interval `&#916;t` can be expressed as</p>
 
-<p>$$P_{decay} = &#955; &#916;t, $$&nbsp;&nbsp;(3)</p>
+<p>$$P_{decay} = &#955; &#916;t, &nbsp;&nbsp;(3)$$</p>
 <!--    \label{eq:decayprobability}-->
 
 <p>and a particle decays if</p>
 
-<p>$$R < P_{decay}, $$ &nbsp;&nbsp;(4)</p>
+<p>$$R < P_{decay}, &nbsp;&nbsp;(4)$$</p>
 <!--    \label{eq:decaytest}-->
 
 <p>where `R` is a random number drawn from a uniform distribution over [0,1).</p>
