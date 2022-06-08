@@ -7,25 +7,27 @@ nav-short: true
 
 <p>The exponential decay formula describes the fate of a chemical substance over time and states that half of its initial quantity, `N_0`, will have vanished after one half-life, `t_{1/2}`, on average. It can be written as</p>
 
-<p>$$ N(t) = N_0 exp(-\lambda t), $$</p>
+<p>$$ N(t) = N_0 exp(-&#955; t), $$</p>
 <!--    \label{eq:exponentialdecay}-->
 
-<p>where `t` is the time and `lambda` is the decay constant equal to</p>
+<p>where `t` is the time and &#955; is the decay constant[^1] equal to</p>
 
-<p>$$ \lambda = \frac{ln(2)}{t_{1/2}}. $$</p>
+[^1]: The decay constant can be viewed as the probability of a single particle to decay per unit time.
+
+<p>$$ &#955; = \frac{ln(2)}{t_{1/2}}. $$</p>
 <!--    \label{eq:decayconstant}-->
 
-<p>From a Lagrangian standpoint, the probability of a particle to decay during a time interval $\Delta t$ can be expressed as</p>
+<p>From a Lagrangian standpoint, the probability of a particle to decay during a time interval `&#916;t` can be expressed as</p>
 
-<p>$$P_{decay} = \lambda \, \Delta t, $$</p>
+<p>$$P_{decay} = &#955; &#916;t, $$</p>
 <!--    \label{eq:decayprobability}-->
 
 <p>and a particle decays if</p>
 
-<p>$$\mathcal{R} < P_{decay}, $$</p>
+<p>$$R < P_{decay}, $$</p>
 <!--    \label{eq:decaytest}-->
 
-<p>where $\mathcal{R}$ is a random number drawn from a uniform distribution over `[0,1)`.</p>
+<p>where `R` is a random number drawn from a uniform distribution over [0,1).</p>
 
 <p>The implementation of chemical decay in the OceanDrift model first consists in adding the half-life to the model's configuration dictionary as</p>
 
@@ -56,7 +58,7 @@ def update(self):
     self.machine_learning_correction()
 ```
 
-<p>where _exponential_decay_ implements Equations~\ref{eq:decayconstant}-\ref{eq:decaytest}.</p>
+<p>where _exponential\_decay_ implements Equations~\ref{eq:decayconstant}-\ref{eq:decaytest}.</p>
 
 ```python [OceanDrift's \textit{exponential\_decay} function]
 def exponential_decay(self):
