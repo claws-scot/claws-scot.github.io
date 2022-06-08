@@ -92,4 +92,4 @@ concentration = concentration*particle_to_ngPerL/float(nsimulations)
 
 <br>
 
-<sup id="fn1">1. <a href="https://opendrift.github.io/performance.html" target="_blank">opendrift.github.io/performance</a><a href="#ref1" title="Jump back to footnote 1 in the text.">&#8617;</a></sup>
+<sup id="fn1">1. <a href="https://opendrift.github.io/performance.html" target="_blank">opendrift.github.io/performance</a><a href="#ref1" title="Jump back to footnote 1 in the text.">&nbsp;&#8617;</a></sup>
