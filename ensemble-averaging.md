@@ -55,32 +55,6 @@ def get_lonlat_bins(self, pixelsize_m, **kwargs):
 
 <p> and a post-processing user script can be written to read each simulation's output file and generate heat maps, plots, etc.</p>
 
-```python
-def get_concentration(outfile):
-    # Opening the output file lazily with Xarray.
-    oa = opendrift.open_xarray(outfile)
-    # Filter out decayed particles and 
-    #            particles whose depth is not in the range [z0-dz, z0] meters
-    oa.ds = oa.ds.where((oa.ds.status == 0) & (oa.ds.z >= z0-dz) & (oa.ds.z <= z0))
-    # Create histogram (binning time, seeding source, lon, and lat)
-    h = oa.get_histogram(pixelsize_m=pixelsize_meters,
-                         corners=[0., 0.000193, 0., 0.0003619])
-    # Sum over all seeding sources and return the histogram at endtime
-    return h[-1].sum(dim='origin_marker')
-    
-# Create the concentration array having the right shape using results from
-# the first simulation
-oa = opendrift.open_xarray('chemical_1.nc')
-concentration = get_concentration('chemical_1.nc')
-# Cumulate chemical concentration over all other ensembles
-for i in range(2, nsimulations + 1):
-    conc = get_concentration('chemical_' + str(i) + '.nc')
-    concentration += conc    
-
-# Plot chemical concentration of all seedings in ng/L
-concentration = concentration*particle_to_ngPerL/float(nsimulations)    
-```
-
 <p>10 statistically independent simulations are run in Figure 1 and the averaged concentration contours are presented in Figure 2, showing the benefits of the approach.</p>
 
 
