@@ -9,6 +9,7 @@ nav-short: true
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>CODE</header>
   <a href="https://claws-scot.github.io/guide" style="background-color:#FFCCCC"><b>Guide</b></a>
+  <a href="https://claws-scot.github.io/guide" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; Chemical decay</a>
   <a href="https://claws-scot.github.io/umls"><b>UML diagrams</b></a>
   <a href="https://claws-scot.github.io/tutorials"><b>Tutos</b></a>
 </div>
