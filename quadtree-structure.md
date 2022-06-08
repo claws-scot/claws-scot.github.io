@@ -87,33 +87,38 @@ def get_lonlat_bins(self, pixelsize_m, **kwargs):
 <p>The quadtree parameters are found in the following Listing:</p>
 
 ```python
-quadtree = {
-    # is_active: bool; Whether or not to create a quadtree from the root
-    # histogram. default is None (ie, not set)
-    self.__is_active = is_active
-    # max_depth: integer; Maximum quadtree depth. default is 0
-    # (ie, no quadtree)
-    self.__max_depth = max_quadtree_depth
-    # min_particles_per_bin: integer; Number of particles per bin that
-    # triggers the creation of a child histogram within the bounds of a
-    # parent histogram. default is 1000
-    self.__min_particles_per_bin = min_particles_per_bin
-    # variable_root_bin_width: bool; Whether or not the root bin width can
-    # be edited automatically using a target concentration. default is False
-    self.__variable_root_bin_width = variable_root_bin_width
-    # concentration_target: float; Concentration target in ng/L to recompute
-    # the root bin width. default is 1 ng/L
-    self.__concentration_target = concentration_target
-    # leaf_bin_width: float; Set target value for the leaf bin width
-    # (meters). default is NaN
-    self.__leaf_bin_width = leaf_bin_width,
-    # variable_leaf_bin_width: bool; Whether or not the leaf bin width can
-    # be edited automatically using the ratio of the leaf bin area to the
-    # seeding area. default is False
-    self.__variable_leaf_bin_width = variable_leaf_bin_width
-    # leaf_to_seeding_area_ratio: float; ratio of the leaf bin area to the
-    # seeding area of a reference seeding location. default is 5.0
-    self.__leaf_to_seeding_area_ratio = leaf_to_seeding_area_ratio
+class Quadtree(object):
+    def __init__(self, is_active=None, max_quadtree_depth=0,
+                 min_particles_per_bin=1000, variable_root_bin_width=False,
+                 concentration_target=1.0, leaf_bin_width=np.nan,
+                 variable_leaf_bin_width=False, leaf_to_seeding_area_ratio=5.0,
+                 input_conc_units='ng/L'):
+        # is_active: bool; Whether or not to create a quadtree from the root
+        # histogram. default is None (ie, not set)
+        self.__is_active = is_active
+        # max_depth: integer; Maximum quadtree depth. default is 0
+        # (ie, no quadtree)
+        self.__max_depth = max_quadtree_depth
+        # min_particles_per_bin: integer; Number of particles per bin that
+        # triggers the creation of a child histogram within the bounds of a
+        # parent histogram. default is 1000
+        self.__min_particles_per_bin = min_particles_per_bin
+        # variable_root_bin_width: bool; Whether or not the root bin width can
+        # be edited automatically using a target concentration. default is False
+        self.__variable_root_bin_width = variable_root_bin_width
+        # concentration_target: float; Concentration target in ng/L to recompute
+        # the root bin width. default is 1 ng/L
+        self.__concentration_target = concentration_target
+        # leaf_bin_width: float; Set target value for the leaf bin width
+        # (meters). default is NaN
+        self.__leaf_bin_width = leaf_bin_width,
+        # variable_leaf_bin_width: bool; Whether or not the leaf bin width can
+        # be edited automatically using the ratio of the leaf bin area to the
+        # seeding area. default is False
+        self.__variable_leaf_bin_width = variable_leaf_bin_width
+        # leaf_to_seeding_area_ratio: float; ratio of the leaf bin area to the
+        # seeding area of a reference seeding location. default is 5.0
+        self.__leaf_to_seeding_area_ratio = leaf_to_seeding_area_ratio
 ```
 
 The quadtree structure is disabled using the following setup:
