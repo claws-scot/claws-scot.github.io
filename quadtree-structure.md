@@ -157,7 +157,7 @@ quadtree = M2Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
 <p>In the third method, the root bin width is computed using a target concentration, `C_\text{target}`, in ng/L, as</p>
 
 <div class="equation">
-  <equation class="equation__content">$$Dw_r = \displaystyle\sqrt{\frac{m_p}{C_\text{target} \times Dh}}\text{.}$$</equation>
+  <equation class="equation__content">$$Dw_r = \displaystyle\sqrt{\frac{m_p}{C_\text{target} \times Dh}}\text{,}$$</equation>
   <div class="equation__number">(2)</div>
 </div>
 
