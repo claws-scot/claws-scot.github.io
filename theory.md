@@ -58,7 +58,7 @@ def update(self):
     self.machine_learning_correction()
 ```
 
-<p>where _exponential\_decay_ implements Equations 2-4.</p>
+<p>where <i>exponential\_decay<i> implements Equations 2-4.</p>
 
 ```python
 def exponential_decay(self):
