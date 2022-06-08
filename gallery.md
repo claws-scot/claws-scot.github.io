@@ -4,6 +4,8 @@ title: Gallery
 nav-short: true
 ---
 
+### Image gallery
+{: #image-gallery }
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -41,6 +43,9 @@ nav-short: true
 </div>
 
 <br>
+
+### Video gallery
+{: #video-gallery }
 
 <p align="center">
 <video height="600" autoplay>

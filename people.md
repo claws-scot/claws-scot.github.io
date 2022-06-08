@@ -35,8 +35,8 @@ nav-short: true
 <!--if (localStorage.getItem("show_sidenav")) openNav()-->
 <!--</script>-->
 
----
-## Developers    
+### Developers    
+
 * <a style="text-decoration: none" href="https://www.researchgate.net/profile/Thomas_Scanlon" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fab fa-researchgate fa-stack-2x" style='color:#00D0AF'></i>

@@ -37,7 +37,7 @@ nav-short: true
 ### Ubuntu
 {: #Ubuntu }
 
-Some of the following guidelinesare taken from [opendrift.github.io/install](https://opendrift.github.io/install.html)
+Some of the following guidelines are taken from [opendrift.github.io/install](https://opendrift.github.io/install.html)
 
 1. Install miniconda3: [docs.conda.io/en/latest/miniconda](https://docs.conda.io/en/latest/miniconda.html)  
 2. Clone the OpenDrift fork related to _CLAWS_
