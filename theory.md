@@ -31,7 +31,7 @@ nav-short: true
 
 <p>The implementation of chemical decay in the OceanDrift model first consists in adding the half-life to the model's configuration dictionary as</p>
 
-```python [New addition to OceanDrift's configuration dictionary]
+```python
 'drift:half_life': {'type': 'float',
                     'default': np.inf,
                     'min': 0, 'max': np.inf,
@@ -42,7 +42,7 @@ nav-short: true
 
 <p>Then, a new function is added at the end of the OceanDrift _update_ function to model the probabilistic decay of particles as</p>
 
-```python [OceanDrift's _update_ function]
+```python
 def update(self):
     """Update positions and properties of elements."""
 
@@ -60,7 +60,7 @@ def update(self):
 
 <p>where _exponential\_decay_ implements Equations~\ref{eq:decayconstant}-\ref{eq:decaytest}.</p>
 
-```python [OceanDrift's \textit{exponential\_decay} function]
+```python
 def exponential_decay(self):
     """Deactivate decayed elements
 
@@ -83,7 +83,7 @@ def exponential_decay(self):
 
 <p>Finally, an Oceandrift object modelling the chemical decay of a substance with a half-life of 5.6 days can be instantiated as follows:</p>
 
-```python [Code snippet to set a half-life]
+```python
 o = OceanDrift(loglevel=20, seed=None)
 o.set_config('drift:half_life', 5.6*86400)
 ```
