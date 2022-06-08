@@ -27,7 +27,7 @@ author: CLAWS
 navbar-links:
   Installation: "installation"
   Code:
-    - Theory: "theory"
+    - Guide: "guide"
     - UML: "umls"
     - Tutos: "tutorials"
   Gallery: "gallery"
