@@ -127,7 +127,7 @@ _quadtree_max_tolerated_depth = 4
 quadtree = NoQuadtree()
 ```
 
-<p>There are a total of five methods. In the first method, the root bin width,`Dw_r`, is defined by the user, and a minimum number of particles per bin is set to decide whether a bin can be subdivided.
+<p>There are a total of five methods. In the first method, the root bin width, `Dw_r`, is defined by the user, and a minimum number of particles per bin is set to decide whether a bin can be subdivided.
 The maximum depth of the quadtree is also set.</p>
 
 ```python
