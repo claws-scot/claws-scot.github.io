@@ -70,7 +70,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
                     'level': self.CONFIG_LEVEL_ADVANCED}
 ```
 
-<p>Then, a new function is added at the end of the OceanDrift _update_ function to model the probabilistic decay of particles as</p>
+<p>Then, a new function is added at the end of the OceanDrift <i>update</i> function to model the probabilistic decay of particles as</p>
 
 ```python
 def update(self):
@@ -88,7 +88,7 @@ def update(self):
     self.machine_learning_correction()
 ```
 
-<p>where <i>exponential\_decay<i> implements Equations 2-4.</p>
+<p>where <i>exponential\_decay</i> implements Equations 2-4.</p>
 
 ```python
 def exponential_decay(self):
