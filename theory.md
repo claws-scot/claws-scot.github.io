@@ -81,11 +81,11 @@ def exponential_decay(self):
     self.deactivate_elements(rdn < proba_decay, reason='decayed')
 ```
 
-<p>Finally, an Oceandrift object modelling the chemical decay of a substance with a half-life of 5.6 days can be instantiated as follows:</p>
+<p>Finally, an Oceandrift object modelling the chemical decay of a substance with a half-life of 8.9 days can be instantiated as follows:</p>
 
 ```python
 o = OceanDrift(loglevel=20, seed=None)
-o.set_config('drift:half_life', 5.6*86400)
+o.set_config('drift:half_life', 8.9*86400)
 ```
 
 <p>Please note that the half-life's default value is an infinite number which means that its implementation is transparent to any simulations that aren't using it.</p>
