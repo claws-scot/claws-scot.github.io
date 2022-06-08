@@ -11,3 +11,25 @@ nav-short: true
   <a href="https://claws-scot.github.io/umls"><b>UML diagrams</b></a>
   <a href="https://claws-scot.github.io/tutos" style="background-color:#FFCCCC"><b>Tutos</b></a>
 </div>
+
+<span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "210px";
+  document.getElementById("mySidenav").style.transition = "0s";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+  localStorage.removeItem('show_sidenav');
+}
+
+function reopenNav() {
+  document.getElementById("mySidenav").style.width = "210px";
+  document.getElementById("mySidenav").style.transition = "0.2s";
+  localStorage.setItem("show_sidenav", true);
+}
+
+if (localStorage.getItem("show_sidenav")) openNav()
+</script>
