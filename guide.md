@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Theory
+title: Guide
 subtitle: Chemical decay
 nav-short: true
 ---
