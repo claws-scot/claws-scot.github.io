@@ -84,7 +84,7 @@ def get_lonlat_bins(self, pixelsize_m, **kwargs):
         return lonbin, latbin
 ```
 
-<p>The quadtree parameters are found in the following Listing:</p>
+<p>The quadtree class implementation is found in the following Listing:</p>
 
 ```python
 class Quadtree(object):
@@ -122,7 +122,7 @@ class Quadtree(object):
 ```
 
 #### No Quadtree    
-The quadtree structure is disabled using the following setup:
+The quadtree structure can be disabled using the following setup:
 
 ```python
 # Quadtree structure
@@ -161,7 +161,7 @@ quadtree = M2Quadtree(max_depth=2, min_particles_per_bin=100, leaf_bin_width=25)
   <div class="equation__number">(2)</div>
 </div>
 
-<p>where `m_p` is the mass of chemical substance (in grams) represented by a single particle. The dictionary keys are given in the following Listing:</p>
+<p>where `m_p` is the mass of chemical substance (in grams) represented by a single particle. The object instantiation is given in the following Listing:</p>
 
 ```python
 # Quadtree structure
