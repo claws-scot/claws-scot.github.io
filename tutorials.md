@@ -35,7 +35,3 @@ if (localStorage.getItem("show_sidenav")) openNav()
 </script>
 
 
-
-<object data="https://github.com/vincentcasseau/CLAWS/blob/main/tests/solution/test_ECE.dat" width="800" height="500">
-Not supported
-</object>
