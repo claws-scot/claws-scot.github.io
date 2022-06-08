@@ -135,11 +135,11 @@ od_mtscfd.quadtree["min_particles_per_bin"] = 100
 <p>In the second method, the leaf bin width, `Dw_l`, is set by the user and the  maximum quadtree depth is derived as</p>
 
 <div class="equation">
-  <equation class="equation__content">$$\text{max\_quadtree\_depth} = \displaystyle\lceil log_2\left(\frac{Dw_r}{Dw_l}\right) \rceil\text{.}$$</equation>
+  <equation class="equation__content">$$\text{max_quadtree_depth} = \displaystyle\lceil log_2\left(\frac{Dw_r}{Dw_l}\right) \rceil\text{.}$$</equation>
   <div class="equation__number">(1)</div>
 </div>
 
-<p>The rest is similar to method \#1.</p>
+<p>The rest is similar to method #1.</p>
 
 ```python
 # Quadtree structure parameters
@@ -166,7 +166,7 @@ od_mtscfd.quadtree["variable_root_bin_width"] = True
 od_mtscfd.quadtree["concentration_target"] = 1
 ```
 
-<p>The fourth method combines methods \#2 and \#3: the root bin width is calculated from a target concentration and the leaf bin width is set.</p>
+<p>The fourth method combines methods #2 and #3: the root bin width is calculated from a target concentration and the leaf bin width is set.</p>
 
 ```python
 # Quadtree structure parameters
@@ -177,11 +177,11 @@ od_mtscfd.quadtree["concentration_target"] = 1
 od_mtscfd.quadtree["leaf_bin_width"] = 25
 ```
 
-<p>Finally, the fifth method is similar to method \#4 but for the leaf bin width that is computed from a prescribed leaf-to-seeding-area ratio, `f`, as</p>
+<p>Finally, the fifth method is similar to method #4 but for the leaf bin width that is computed from a prescribed leaf-to-seeding-area ratio, `f`, as</p>
 
 <div class="equation">
   <equation class="equation__content">$$Dw_l = \displaystyle\sqrt{f \times A_\text{seeding}}\text{.}$$</equation>
-  <div class="equation__number">(1)</div>
+  <div class="equation__number">(3)</div>
 </div>
 
 ```python
