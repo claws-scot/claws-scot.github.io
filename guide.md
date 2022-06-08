@@ -40,7 +40,6 @@ if (localStorage.getItem("show_sidenav")) openNav()
 
 <div class="equation">
   <equation class="equation__content">$$N(t) = N_0 exp(-&#955; t)\text{,}$$</equation>
-  <!--    \label{eq:exponentialdecay}-->
   <div class="equation__number">(1)</div>
 </div>
   
@@ -48,18 +47,24 @@ if (localStorage.getItem("show_sidenav")) openNav()
 
 <!--[^1]: The decay constant can be viewed as the probability of a single particle to decay per unit time.-->
 
-<p>$$ &#955; = \frac{ln(2)}{t_{1/2}}. &nbsp;&nbsp;(2)$$</p>
-<!--    \label{eq:decayconstant}-->
+<div class="equation">
+  <equation class="equation__content">$$&#955; = \frac{ln(2)}{t_{1/2}}\text{.}$$</equation>
+  <div class="equation__number">(2)</div>
+</div>
 
-<p>From a Lagrangian standpoint, the probability of a particle to decay during a time interval `&#916;t` can be expressed as</p>
+<p>From a Lagrangian standpoint, the probability of a particle to decay during a time interval &#916;`t` can be expressed as</p>
 
-<p>$$P_{decay} = &#955; &#916;t, &nbsp;&nbsp;(3)$$</p>
-<!--    \label{eq:decayprobability}-->
+<div class="equation">
+  <equation class="equation__content">$$P_{decay} = &#955; &#916;t\text{,}$$</equation>
+  <div class="equation__number">(3)</div>
+</div>
 
 <p>and a particle decays if</p>
 
-<p>$$R < P_{decay}, &nbsp;&nbsp;(4)$$</p>
-<!--    \label{eq:decaytest}-->
+<div class="equation">
+  <equation class="equation__content">$$R < P_{decay}\text{,}$$</equation>
+  <div class="equation__number">(4)</div>
+</div>
 
 <p>where `R` is a random number drawn from a uniform distribution over [0,1).</p>
 
