@@ -16,7 +16,7 @@ Reproduce the work presented in the PARTRAC report (uses MIKE 21).
 &#9634; Understand S: the rate at which nutrient nitrogen is discharged  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
-<img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
+  <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
 Loch Long:  
@@ -47,16 +47,23 @@ Salmon Farm's nutrient enhancement index = 1
 <h5>BATHYMETRY</h5>
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
-<img src="/docs/meeting/bathymetry-data.png" style="height:300px">
+  <img src="/docs/meeting/bathymetry-data.png" style="height:300px">
 </p>
 
-  - <b>Scotland's bathymetry not available in OpenDrift</b>
-  - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.
+  - <b>Scotland's bathymetry currently not available in OpenDrift</b>
+  - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.  
+    + <a href="https://data.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/pages/seabed-mapping-services">data.admiralty.co.uk seabed-mapping-services</a>  
+    + <a href="https://seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00">seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00</a>  
+    
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/admiralty.png" style="height:300px">
+</p>
+    
   - <strike>OceanWise offer a 1 arcsecond digital elevation model under commercial licence. This covers UK waters.</strike>   
   - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the NE Atlantic region.  
   - GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the globe.
   
-Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
+Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
 
 &nbsp;
 <h5>SHORELINES</h5>
@@ -80,7 +87,7 @@ Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/t
     </div> 
   * flushing time _Tf'_: when 67% are gone
   
-&#9634; Repeat simulation for different tide conditions (10 times)
+&#9634; Repeat simulation for different tide conditions (10 times)  
 &#9634; Find best fit for nparticles vs. time, get averaged Tf'   
 &#9634; Derive ECE' and NEI' from _A'_, _V'_ and _Tf'_  
 
