@@ -72,7 +72,6 @@ Salmon Farm's nutrient enhancement index = 1
   * flushing time Tf': when 67% are gone
   
 &#9634; Repeat simulation for different tide conditions (10 times), find best fit for nparticles vs. time, get averaged Tf'   
-
 &#9634; Derive ECE and NEI from A', V' and Tf'  
 
 
