@@ -10,17 +10,17 @@ nav-short: true
 Reproduce the work presented the PARTRAC report (uses MIKE 21).
 &nbsp;
 <h5>ECE & NEI ESTIMATIONS</h5>
-- [x] Add Loch's area, A, volume, V, and tidal range data (Edwards & Sharples)
-- [x] Estimate flushing rate and flushing time, Tf
-- [x] Derive ECE (any units) and NEI
-- [ ] Understand S: the rate at which nutrient nitrogen is discharged
+  [x] Add Loch's area, A, volume, V, and tidal range data (Edwards & Sharples)
+  [x] Estimate flushing rate and flushing time, Tf
+  [x] Derive ECE (any units) and NEI
+  [ ] Understand S: the rate at which nutrient nitrogen is discharged
 
 <p align="center">
 <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
-Results from test_ECE
-```sh
+Results from test_ECE.py
+```python
 Existing biomass:
 Salmon Farm's ECE (kg/m^3) = 3.595962e-07
 Salmon Farm's ECE (ug/L) = 0.359596
@@ -56,6 +56,9 @@ Salmon Farm's nutrient enhancement index = 1
         <br>
     </div> 
   * flushing time Tf': when 67% are gone
+  
+- [ ] Repeat seimulation 10 times for different tide conditions ebb, flow, ...
+
 - [ ] Derive ECE and NEI from A', V' and Tf'
 
 
