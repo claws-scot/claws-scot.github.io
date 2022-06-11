@@ -52,11 +52,16 @@ Salmon Farm's nutrient enhancement index = 1
 &nbsp;
 <h5>BATHYMETRY</h5>
 
+  - <b>Scotland's bathymetry data in OD too coarse</b>
+  
 <p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/bathymetry-data.png" style="height:300px">
+  <img src="/docs/meeting/OD_seabed_1.png" style="height:200px">
+</p>  
+
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/bathymetry-data.png" style="height:200px">
 </p>
 
-  - <b>Scotland's bathymetry currently not available in OpenDrift</b>
   - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.  
     + <a href="https://data.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/pages/seabed-mapping-services">data.admiralty.co.uk seabed-mapping-services</a>  
     + <a href="https://seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00">seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00</a>  
@@ -95,6 +100,10 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   * flushing time _Tf'_: when 67% are gone
   * tidal range _R'_
   
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/seeding_particles.png" style="height:500px">
+</p>   
+  
 &#9634; Repeat simulation for different tide conditions (10 times)  
 &#9634; Find best fit for nparticles vs. time, get averaged _Tf'_   
-&#9634; Derive ECE' and NEI' from _A'_, _V'_, _R'_ and _Tf'_  
+&#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R'_ and _Tf'_  
