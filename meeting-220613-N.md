@@ -25,7 +25,7 @@ nav-short: true
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
-Loch Long:  
+- Loch Long using Gillibrand's data circled in red:  
 ```python
 class LochLong(Loch):
     def __init__(self):
@@ -34,7 +34,7 @@ class LochLong(Loch):
                          reference="Gillibrand, P.A., Gubbins, G.J. (2002)")
 ```
 
-Results from test_ECE.py  
+- Results from test_ECE.py  
 ```
 Existing biomass:
 Salmon Farm's ECE (kg/m^3) = 3.595962e-07
