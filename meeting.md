@@ -19,7 +19,16 @@ Reproduce the work presented in the PARTRAC report (uses MIKE 21).
 <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
-Results from test_ECE.py
+Loch Long:  
+```python
+class LochLong(Loch):
+    def __init__(self):
+        super().__init__(area=44.0, tidal_range=3.1, volume=1758.0,
+                         mean_depth=40.0,
+                         reference="Gillibrand, P.A., Gubbins, G.J. (2002)"
+```
+
+Results from test_ECE.py  
 ```
 Existing biomass:
 Salmon Farm's ECE (kg/m^3) = 3.595962e-07
