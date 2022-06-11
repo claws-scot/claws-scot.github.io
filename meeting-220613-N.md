@@ -7,8 +7,8 @@ nav-short: true
 
 ## Nutrients module
 
-Reproduce the work presented in the PARTRAC report (uses MIKE 21).
-Nutrient: Nitrogen (N), 2 sources:
+Reproduce the work presented in the PARTRAC report (uses MIKE 21).  
+Nutrient: Nitrogen (N), 2 sources
   - dissolved ammonia  
   - particulate waste emissions re-dissolving into the water column from the seabed   
   
@@ -17,8 +17,16 @@ Nutrient: Nitrogen (N), 2 sources:
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI  
-&#9634; Nitrogen source: the rate at which nutrient nitrogen is discharged  
-   - function of stocking, feeding and harvesting strategies employed during cultivation  
+&#9634; N source: the rate at which nutrient N is discharged  
+  - function of stocking, feeding and harvesting strategies employed during cultivation
+  - amount of N released can be calculated as the difference between the amount input in the feed and that
+incorporated into fish growth  
+    + feed wastage: fw = 5%  
+    + diet non-digestibility: dnd = 10%
+    + mean N content of diet: 7.5%  
+    + yearly salmon prod.: ysp = 1000/20*12 = 600 t  
+    + mortality rate: mr = 10%  
+    + Nreleased (kg-N/tonne-prod) = Ninput - Nfishgrowth = Ninput (1 - Nfishgrowth/Ninput)  
  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
