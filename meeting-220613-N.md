@@ -17,7 +17,7 @@ nav-short: true
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
-&#9634; Understand why they used 2 values of S: 48.2 kgN/tonne-prod. (existing biomass column), and 40.68 kgN/tonne-prod. (options 1-3 columns)     
+&#9634; Understand why they used 2 values of S: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
   - function of stocking, feeding and harvesting strategies employed during cultivation
   - amount of N released = input amount - amount incorporated into fish growth  
 
@@ -57,7 +57,7 @@ nav-short: true
 &nbsp;
 <h5>BATHYMETRY</h5>
 
-  - <b>Scotland's bathymetry data in OD too coarse</b>
+  - Scotland's bathymetry data in OD too coarse
   
 <p align="center">
   <img src="/docs/meeting/OD_seabed_1.png" style="height:200px">
@@ -109,6 +109,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   <img src="/docs/meeting/seeding_particles.png" style="height:500px">
 </p>   
   
+&#9634; Find an appropriate seeding technique, see last example: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a>   
 &#9634; Repeat simulation for different tide conditions (10 times)  
 &#9634; Find best fit for nparticles vs. time, get averaged _Tf'_   
 &#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R'_ and _Tf'_  
