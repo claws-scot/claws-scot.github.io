@@ -56,7 +56,7 @@ Salmon Farm's nutrient enhancement index = 1
   - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the NE Atlantic region.  They also have an interactive map which can display contours.
   - GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the globe.
   
-Ref: <a href=http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
+Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
 
 &nbsp;
 <h5>SHORELINES</h5>
