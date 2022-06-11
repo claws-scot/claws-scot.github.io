@@ -90,5 +90,3 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
 &#9634; Repeat simulation for different tide conditions (10 times)  
 &#9634; Find best fit for nparticles vs. time, get averaged Tf'   
 &#9634; Derive ECE' and NEI' from _A'_, _V'_ and _Tf'_  
-
-
