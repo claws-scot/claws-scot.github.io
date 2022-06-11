@@ -17,17 +17,9 @@ Nutrient: Nitrogen (N), 2 sources
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI  
-&#9634; N source: the rate at which nutrient N is discharged  
+&#9634; N source: understand why they used 2 values of 48.2 (existing biomass) and 40.68 kgN/tonne-prod (options 1-3).  
   - function of stocking, feeding and harvesting strategies employed during cultivation
-  - amount of N released can be calculated as the difference between the amount input in the feed and that
-incorporated into fish growth  
-    + feed wastage: fw = 5%  
-    + diet non-digestibility: dnd = 10%
-    + mean N content of diet: 7.5%  
-    + yearly salmon prod.: ysp = 1000/20*12 = 600 t  
-    + mortality rate: mr = 10%  
-    + Nreleased (kg-N/tonne-prod) = Ninput - Nfishgrowth = Ninput (1 - Nfishgrowth/Ninput)  
- 
+  - amount of N released = input amount - amount incorporated into fish growth  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
@@ -51,9 +43,9 @@ Salmon Farm's ECE (umol/L) = 0.025685
 Salmon Farm's nutrient enhancement index = 1
 
 Released biomass - Option 1:
-Salmon Farm's ECE (kg/m^3) = 1.438385e-06
-Salmon Farm's ECE (ug/L) = 1.438385
-Salmon Farm's ECE (umol/L) = 0.102742
+Salmon Farm's ECE (kg/m^3) = 1.212779e-06
+Salmon Farm's ECE (ug/L) = 1.212779
+Salmon Farm's ECE (umol/L) = 0.086627
 Salmon Farm's nutrient enhancement index = 1
 ```
 
