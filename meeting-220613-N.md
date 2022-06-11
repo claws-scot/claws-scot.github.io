@@ -93,7 +93,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
         <br>
     </div> 
   * flushing time _Tf'_: when 67% are gone
-  * tiday range _R'_
+  * tidal range _R'_
   
 &#9634; Repeat simulation for different tide conditions (10 times)  
 &#9634; Find best fit for nparticles vs. time, get averaged _Tf'_   
