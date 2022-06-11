@@ -10,7 +10,7 @@ nav-short: true
 Reproduce the work presented in the PARTRAC report (uses MIKE 21).
 &nbsp;
 <h5>ECE & NEI ESTIMATIONS</h5>  
-&#9989; Add Loch's area, _A_, volume, _V_, and tidal range data to `Loch` (Edwards & Sharples)  
+&#9989; Add Loch's area, _A_, volume, _V_, and tidal range to `Loch` (Edwards & Sharples)  
 &#9989; Estimate flushing rate and flushing time, Tf  
 &#9989; Derive ECE (any units) and NEI  
 &#9634; Understand S: the rate at which nutrient nitrogen is discharged  
@@ -20,7 +20,7 @@ Reproduce the work presented in the PARTRAC report (uses MIKE 21).
 </p>
 
 Results from test_ECE.py
-```python
+```
 Existing biomass:
 Salmon Farm's ECE (kg/m^3) = 3.595962e-07
 Salmon Farm's ECE (ug/L) = 0.359596
@@ -37,14 +37,24 @@ Salmon Farm's nutrient enhancement index = 1
 &nbsp;
 <h5>BATHYMETRY</h5>
 &#9634; Import bathymetry data (we should have done this in the sea lice report!)
-  - 3 links in the report not useful
-  - is there a reader in OpenDrift that could be loaded for this area?
+  - Scotland area not available in OpenDrift
 
 <p align="center">
 <img src="/docs/meeting/bathymetry-data.png" style="height:300px">
 </p>
 
-- Calculate the Loch's area, A', and volume, V', from the bathymetry data
+  - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.
+  - <strike>OceanWise offer a 1 arcsecond digital elevation model under commercial licence. This covers UK waters.  Other suppliers might be available.</strike>  
+  - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the NE Atlantic region.  They also have an interactive map which can display contours.
+  - GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the globe.
+  
+(http://marine.gov.scot/taxonomy/term/17/)
+
+&nbsp;
+<h5>Shorelines</h5>
+ - derived from Satellite EMODnet shoreline data, relative to MSL.
+
+&#9634; Calculate the Loch's area, A', and volume, V', from the bathymetry & coastline data (optional?)
 
 &nbsp;
 <h5>OpenDrift</h5>
