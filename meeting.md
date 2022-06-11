@@ -65,7 +65,7 @@ Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/t
 
 &#9634; Download EMODnet bathymetry and shoreline data  
 &#9634; Import bathymetry data (should we have done this in the sea lice report!?)  
-&#9634; Calculate the Loch's area, A', and volume, V', from the bathymetry & coastline data (optional?)  
+&#9634; Calculate the Loch's area, _A'_, and volume, _V'_, from the bathymetry & coastline data (optional?)  
 
 &nbsp;
 <h5>OPENDRIFT</h5>
@@ -78,9 +78,9 @@ Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/t
     <div style="line-height:50%;">
         <br>
     </div> 
-  * flushing time Tf': when 67% are gone
+  * flushing time _Tf'_: when 67% are gone
   
 &#9634; Repeat simulation for different tide conditions (10 times), find best fit for nparticles vs. time, get averaged Tf'   
-&#9634; Derive ECE and NEI from A', V' and Tf'  
+&#9634; Derive ECE' and NEI' from _A'_, _V'_ and _Tf'_  
 
 
