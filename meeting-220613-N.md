@@ -105,12 +105,8 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   * flushing time _Tf'_: when 67% are gone
   * tidal range _R'_
   
-<p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/seeding_particles.png" style="height:500px">
-</p>   
-  
-&#9634; Find an appropriate seeding technique, see last example:
-  - from gml file: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a>
+&#9634; Find an appropriate seeding technique:
+  - from gml file: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example)  
   - from shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a>    
   - from GSON string: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, 10mn free demo at <a href="www.scribblemaps.com"> scribblemaps.com</a>  
 
