@@ -25,7 +25,7 @@ nav-short: true
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
-- Loch Long using Gillibrand's data circled in red:  
+- Loch Long using the data circled in red:  
     ```python
     class LochLong(Loch):
         def __init__(self):
@@ -36,7 +36,7 @@ nav-short: true
     <div style="line-height:50%;">
         <br>
     </div>
-- Results from test_ECE.py  
+- Results of test_ECE.py are matching the Excel sheet's outputs  
     ```
     Existing biomass:
     Salmon Farm's ECE (kg/m^3) = 3.595962e-07
@@ -59,7 +59,7 @@ nav-short: true
 
   - <b>Scotland's bathymetry data in OD too coarse</b>
   
-<p align="center" style="border-style:solid; border:2; border-color:black">
+<p align="center">
   <img src="/docs/meeting/OD_seabed_1.png" style="height:200px">
 </p>  
 
