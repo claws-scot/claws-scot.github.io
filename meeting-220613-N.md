@@ -26,28 +26,33 @@ nav-short: true
 </p>
 
 - Loch Long using Gillibrand's data circled in red:  
-```python
-class LochLong(Loch):
-    def __init__(self):
-        super().__init__(area=44.0, tidal_range=3.1, volume=1758.0,
-                         mean_depth=40.0,
-                         reference="Gillibrand, P.A., Gubbins, G.J. (2002)")
-```
-
+    ```python
+    class LochLong(Loch):
+        def __init__(self):
+            super().__init__(area=44.0, tidal_range=3.1, volume=1758.0,
+                             mean_depth=40.0,
+                             reference="Gillibrand, P.A., Gubbins, G.J. (2002)")
+    ```
+    <div style="line-height:50%;">
+        <br>
+    </div>
 - Results from test_ECE.py  
-```
-Existing biomass:
-Salmon Farm's ECE (kg/m^3) = 3.595962e-07
-Salmon Farm's ECE (ug/L) = 0.359596
-Salmon Farm's ECE (umol/L) = 0.025685
-Salmon Farm's nutrient enhancement index = 1
+    ```
+    Existing biomass:
+    Salmon Farm's ECE (kg/m^3) = 3.595962e-07
+    Salmon Farm's ECE (ug/L) = 0.359596
+    Salmon Farm's ECE (umol/L) = 0.025685
+    Salmon Farm's nutrient enhancement index = 1
 
-Released biomass - Option 1:
-Salmon Farm's ECE (kg/m^3) = 1.212779e-06
-Salmon Farm's ECE (ug/L) = 1.212779
-Salmon Farm's ECE (umol/L) = 0.086627
-Salmon Farm's nutrient enhancement index = 1
-```
+    Released biomass - Option 1:
+    Salmon Farm's ECE (kg/m^3) = 1.212779e-06
+    Salmon Farm's ECE (ug/L) = 1.212779
+    Salmon Farm's ECE (umol/L) = 0.086627
+    Salmon Farm's nutrient enhancement index = 1
+    ```
+    <div style="line-height:50%;">
+        <br>
+    </div>
 
 &nbsp;
 <h5>BATHYMETRY</h5>
