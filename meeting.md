@@ -54,6 +54,7 @@ Salmon Farm's nutrient enhancement index = 1
   - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.  
     + <a href="https://data.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/pages/seabed-mapping-services">data.admiralty.co.uk seabed-mapping-services</a>  
     + <a href="https://seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00">seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00</a>  
+    + file format for free download is set to ASCII or BAG  
     
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/admiralty.png" style="height:300px">
