@@ -7,10 +7,10 @@ nav-short: true
 
 ## Nutrients module
 
-Reproduce the work presented in the PARTRAC report (uses MIKE 21).  
-Nutrient: Nitrogen (N), 2 sources
-  - dissolved ammonia  
-  - particulate waste emissions re-dissolving into the water column from the seabed   
+- Reproduce the work presented in the PARTRAC report (uses MIKE 21).  
+- Nutrient: Nitrogen (N), 2 sources
+  + dissolved ammonia  
+  + particulate waste emissions re-dissolving into the water column from the seabed   
   
 &nbsp;
 <h5>ECE & NEI ESTIMATIONS</h5>  
