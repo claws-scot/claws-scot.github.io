@@ -9,11 +9,11 @@ nav-short: true
 
 Reproduce the work presented the PARTRAC report (uses MIKE 21).
 &nbsp;
-<h5>ECE & NEI ESTIMATIONS</h5>
-- {+ Add Loch's area, A, volume, V, and tidal range data (Edwards & Sharples) +}
-- {+ Estimate flushing rate and flushing time, Tf +}
-- {+ Derive ECE (any units) and NEI +}
-- Understand S: the rate at which nutrient nitrogen is discharged
+<h5>ECE & NEI ESTIMATIONS</h5>  
+&#9989; Add Loch's area, A, volume, V, and tidal range data to `Loch` (Edwards & Sharples)  
+&#9989; Estimate flushing rate and flushing time, Tf  
+&#9989; Derive ECE (any units) and NEI  
+- Understand S: the rate at which nutrient nitrogen is discharged  
 
 <p align="center">
 <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
