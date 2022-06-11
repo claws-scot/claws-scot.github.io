@@ -51,7 +51,9 @@ Salmon Farm's nutrient enhancement index = 1
 - Run an Opendrift simulation grid
   * particles are evenly-spaced (what depth?)
   * particles seeded on land aren't moved back into the sea:
-    ```o.set_config('seed:ocean_only', False) # Do not reseed elements on land in the ocean```
+    ```sh
+    o.set_config('seed:ocean_only', False) # Do not reseed elements on land in the ocean
+    ```
     <div style="line-height:50%;">
         <br>
     </div> 
