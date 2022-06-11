@@ -50,10 +50,10 @@ Salmon Farm's nutrient enhancement index = 1
 <img src="/docs/meeting/bathymetry-data.png" style="height:300px">
 </p>
 
-  - <b>Scotland area not available in OpenDrift</b>
+  - <b>Scotland's bathymetry not available in OpenDrift</b>
   - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.
-  - <strike>OceanWise offer a 1 arcsecond digital elevation model under commercial licence. This covers UK waters.  Other suppliers might be available.</strike>  
-  - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the NE Atlantic region.  They also have an interactive map which can display contours.
+  - <strike>OceanWise offer a 1 arcsecond digital elevation model under commercial licence. This covers UK waters.</strike>   
+  - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the NE Atlantic region.  
   - GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the globe.
   
 Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
@@ -64,12 +64,12 @@ Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/t
 
 
 &#9634; Download EMODnet bathymetry and shoreline data  
-&#9634; Import bathymetry data (should we have done this in the sea lice report!?)  
+&#9634; Import bathymetry data (should we have done it in the sea lice report!?)  
 &#9634; Calculate the Loch's area, _A'_, and volume, _V'_, from the bathymetry & coastline data (optional?)  
 
 &nbsp;
 <h5>OPENDRIFT</h5>
-&#9634; Run an Opendrift simulation grid  
+&#9634; Run an Opendrift simulation      
   * evenly-spaced particles (what depth?) - not 1 per cell (test multiple spacings: 5 m, 10 m)
   * seeds on land aren't moved back into the sea:
     ```sh
@@ -80,7 +80,8 @@ Ref: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/t
     </div> 
   * flushing time _Tf'_: when 67% are gone
   
-&#9634; Repeat simulation for different tide conditions (10 times), find best fit for nparticles vs. time, get averaged Tf'   
+&#9634; Repeat simulation for different tide conditions (10 times)
+&#9634; Find best fit for nparticles vs. time, get averaged Tf'   
 &#9634; Derive ECE' and NEI' from _A'_, _V'_ and _Tf'_  
 
 
