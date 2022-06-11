@@ -50,7 +50,7 @@ Salmon Farm's nutrient enhancement index = 1
 (http://marine.gov.scot/taxonomy/term/17/)
 
 &nbsp;
-<h5>Shorelines</h5>
+<h5>SHORELINES</h5>
  - derived from Satellite EMODnet shoreline data, relative to MSL.
 
 
@@ -59,7 +59,7 @@ Salmon Farm's nutrient enhancement index = 1
 &#9634; Calculate the Loch's area, A', and volume, V', from the bathymetry & coastline data (optional?)
 
 &nbsp;
-<h5>OpenDrift</h5>
+<h5>OPENDRIFT</h5>
 &#9634; Run an Opendrift simulation grid  
   * evenly-spaced particles (what depth?) - not 1 per cell (test multiple spacings: 5 m, 10 m)
   * seeds on land aren't moved back into the sea:
