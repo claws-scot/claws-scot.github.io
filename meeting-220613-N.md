@@ -93,8 +93,17 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
 
 &nbsp;
 <h5>OPENDRIFT</h5>
+&#9634; Find an appropriate seeding technique:
+  - from gml file: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example)  
+  - from shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a>    
+  - from GSON string: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, 10mn free demo at <a href="www.scribblemaps.com"> scribblemaps.com</a>  
+
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/better-seeding.png" style="height:500px">
+</p> 
+
 &#9634; Run an Opendrift simulation      
-  * evenly-spaced particles (what depth?) - not 1 per cell (test multiple spacings: 5 m, 10 m)
+  * evenly-spaced particles (what depth?) - not 1 per cell (control spacing?: 5 m, 10 m or number of particles)
   * seeds on land aren't moved back into the sea:
     ```sh
     o.set_config('seed:ocean_only', False)
@@ -104,15 +113,6 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
     </div> 
   * flushing time _Tf'_: when 67% are gone
   * tidal range _R'_
-  
-&#9634; Find an appropriate seeding technique:
-  - from gml file: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example)  
-  - from shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a>    
-  - from GSON string: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, 10mn free demo at <a href="www.scribblemaps.com"> scribblemaps.com</a>  
-
-<p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/better-seeding.png" style="height:500px">
-</p>   
   
 &#9634; Repeat simulation for different tide conditions (10 times)  
 &#9634; Find best fit for nparticles vs. time, get averaged _Tf'_   
