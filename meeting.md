@@ -25,7 +25,7 @@ class LochLong(Loch):
     def __init__(self):
         super().__init__(area=44.0, tidal_range=3.1, volume=1758.0,
                          mean_depth=40.0,
-                         reference="Gillibrand, P.A., Gubbins, G.J. (2002)"
+                         reference="Gillibrand, P.A., Gubbins, G.J. (2002)")
 ```
 
 Results from test_ECE.py  
@@ -56,16 +56,16 @@ Salmon Farm's nutrient enhancement index = 1
   - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the NE Atlantic region.  They also have an interactive map which can display contours.
   - GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the globe.
   
-(http://marine.gov.scot/taxonomy/term/17/)
+Ref: <a href=http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
 
 &nbsp;
 <h5>SHORELINES</h5>
- - derived from Satellite EMODnet shoreline data, relative to MSL.
+ - "derived from Satellite EMODnet shoreline data, relative to MSL."
 
 
-&#9634; Download EMODnet bathymetry and shoreline data
+&#9634; Download EMODnet bathymetry and shoreline data  
 &#9634; Import bathymetry data (should we have done this in the sea lice report!?)  
-&#9634; Calculate the Loch's area, A', and volume, V', from the bathymetry & coastline data (optional?)
+&#9634; Calculate the Loch's area, A', and volume, V', from the bathymetry & coastline data (optional?)  
 
 &nbsp;
 <h5>OPENDRIFT</h5>
