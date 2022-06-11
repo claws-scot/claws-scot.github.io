@@ -15,7 +15,7 @@ Reproduce the work presented in the PARTRAC report (uses MIKE 21).
 &#9989; Derive ECE (any units) and NEI  
 &#9634; Understand S: the rate at which nutrient nitrogen is discharged  
 
-<p align="center">
+<p align="center" style="border-style:solid; border:2; border-color:black">
 <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
@@ -36,13 +36,12 @@ Salmon Farm's nutrient enhancement index = 1
 
 &nbsp;
 <h5>BATHYMETRY</h5>
-&#9634; Import bathymetry data (we should have done this in the sea lice report!)
-  - Scotland area not available in OpenDrift
 
-<p align="center">
+<p align="center" style="border-style:solid; border:2; border-color:black">
 <img src="/docs/meeting/bathymetry-data.png" style="height:300px">
 </p>
 
+  - <b>Scotland area not available in OpenDrift</b>
   - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.
   - <strike>OceanWise offer a 1 arcsecond digital elevation model under commercial licence. This covers UK waters.  Other suppliers might be available.</strike>  
   - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, <b>under certain licence conditions</b>.  This data covers the NE Atlantic region.  They also have an interactive map which can display contours.
@@ -54,12 +53,15 @@ Salmon Farm's nutrient enhancement index = 1
 <h5>Shorelines</h5>
  - derived from Satellite EMODnet shoreline data, relative to MSL.
 
+
+&#9634; Download EMODnet bathymetry and shoreline data
+&#9634; Import bathymetry data (should we have done this in the sea lice report!?)  
 &#9634; Calculate the Loch's area, A', and volume, V', from the bathymetry & coastline data (optional?)
 
 &nbsp;
 <h5>OpenDrift</h5>
 &#9634; Run an Opendrift simulation grid  
-  * evenly-spaced particles (what depth?) - not 1 per cell
+  * evenly-spaced particles (what depth?) - not 1 per cell (test multiple spacings: 5 m, 10 m)
   * seeds on land aren't moved back into the sea:
     ```sh
     o.set_config('seed:ocean_only', False)
@@ -69,7 +71,7 @@ Salmon Farm's nutrient enhancement index = 1
     </div> 
   * flushing time Tf': when 67% are gone
   
-&#9634; Repeat simulation for different tide conditions (10 times)   
+&#9634; Repeat simulation for different tide conditions (10 times), find best fit for nparticles vs. time, get averaged Tf'   
 
 &#9634; Derive ECE and NEI from A', V' and Tf'  
 
