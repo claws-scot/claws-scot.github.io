@@ -8,12 +8,18 @@ nav-short: true
 ## Nutrients module
 
 Reproduce the work presented in the PARTRAC report (uses MIKE 21).
+Nutrient: Nitrogen (N), 2 sources:
+  - dissolved ammonia  
+  - particulate waste emissions re-dissolving into the water column from the seabed   
+  
 &nbsp;
 <h5>ECE & NEI ESTIMATIONS</h5>  
-&#9989; Add Loch's area, _A_, volume, _V_, and tidal range to `Loch` (Edwards & Sharples)  
-&#9989; Estimate flushing rate and flushing time, Tf  
-&#9989; Derive ECE (any units) and NEI  
-&#9634; Understand S: the rate at which nutrient nitrogen is discharged  
+&#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
+&#9989; Estimate flushing rate and flushing time, _Tf_  
+&#9989; Derive ECE and NEI  
+&#9634; Nitrogen source: the rate at which nutrient nitrogen is discharged  
+   - function of stocking, feeding and harvesting strategies employed during cultivation  
+ 
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
@@ -87,7 +93,8 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
         <br>
     </div> 
   * flushing time _Tf'_: when 67% are gone
+  * tiday range _R'_
   
 &#9634; Repeat simulation for different tide conditions (10 times)  
-&#9634; Find best fit for nparticles vs. time, get averaged Tf'   
-&#9634; Derive ECE' and NEI' from _A'_, _V'_ and _Tf'_  
+&#9634; Find best fit for nparticles vs. time, get averaged _Tf'_   
+&#9634; Derive ECE' and NEI' from _A'_, _V'_, _R'_ and _Tf'_  
