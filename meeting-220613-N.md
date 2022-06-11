@@ -17,7 +17,7 @@ nav-short: true
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI  
-&#9634; N source: understand why they used 2 values of S = 48.2 (existing biomass column) and 40.68 kgN/tonne-prod. (options 1-3 columns).  
+&#9634; Understand why they used 2 values of S = 48.2 kgN/tonne-prod. (existing biomass column) and 40.68 kgN/tonne-prod. (options 1-3 columns).  
   - function of stocking, feeding and harvesting strategies employed during cultivation
   - amount of N released = input amount - amount incorporated into fish growth  
 
