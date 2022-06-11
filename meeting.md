@@ -10,7 +10,7 @@ nav-short: true
 Reproduce the work presented the PARTRAC report (uses MIKE 21).
 &nbsp;
 <h5>ECE & NEI ESTIMATIONS</h5>
-- [x] Add Loch's area, volume and tidal range data (Edwards & Sharples)
+- [x] Add Loch's area, A, volume, V, and tidal range data (Edwards & Sharples)
 - [x] Estimate flushing rate and flushing time
 - [x] Derive ECE (any units) and NEI
 - [ ] Understand S: the rate at which nutrient nitrogen is discharged
@@ -44,7 +44,14 @@ Salmon Farm's nutrient enhancement index = 1
 <img src="/docs/meeting/bathymetry-data.png" style="height:300px">
 </p>
 
-- [ ] Calculate the Loch's area & volume from the bathymetry data
-- [ ] 
+- [ ] Calculate the Loch's area, A', and volume, V', from the bathymetry data
+- [ ] Run an Opendrift simulation grid
+  * particles are evenly-spaced (what depth?)
+  * particles seeded on land aren't moved back into the sea:
+    ```o.set_config('seed:ocean_only', False) # Do not reseed elements on land in the ocean```
+    <div style="line-height:50%;">
+        <br>
+    </div> 
+  * flushing time: when 67% are gone
 
 
