@@ -86,10 +86,8 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
 <h5>SHORELINES</h5>
  - "derived from Satellite EMODnet shoreline data, relative to MSL."
 
-
 &#9634; Download EMODnet bathymetry and shoreline data  
 &#9634; Import bathymetry data (should we have done it in the sea lice report!?)  
-&#9634; Calculate the Loch's area, _A'_, and volume, _V'_, from the bathymetry & coastline data (optional?)  
 
 &nbsp;
 <h5>OPENDRIFT</h5>
@@ -102,8 +100,20 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   <img src="/docs/meeting/better-seeding.png" style="height:500px">
 </p> 
 
+&#9634; (optional?) Calculate the Loch's area, _A'_, and volume, _V'_, from
+  - Exact: the bathymetry & coastline data   
+  - Approximate:
+    + _A'_: area GSON polygon * nactive / (nactive + nstranded)
+    + _V'_: seed on the sea floor, get _z_ for all active particles and neighbour particles to create a polygon
+      ```sh
+        z='seafloor+0'
+      ```
+      <div style="line-height:50%;">
+          <br>
+      </div>
+
 &#9634; Run an Opendrift simulation      
-  * evenly-spaced particles (what depth?), control spacing?: 5 m, 10 m or number of particles  
+  * evenly-spaced particles (what depth?), control spacing or number of particles  
   * seeds on land aren't moved back into the sea:
     ```sh
     o.set_config('seed:ocean_only', False)
@@ -111,7 +121,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
     <div style="line-height:50%;">
         <br>
     </div> 
-  * flushing time _Tf'_: when 67% are gone
+  * flushing time _Tf'_: when 67% are gone (write `is_particle_in_GSON_polygon()`)
   * tidal range _R'_
   
 &#9634; Repeat simulation for different tide conditions (10 times)  
