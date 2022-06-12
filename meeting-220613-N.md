@@ -131,7 +131,7 @@ Due to an offset to the East, larger margins are required:
     + more and more precise as nseeds is increased. Graph _A'_ vs. nseeds, does it converge?, use Richardson's extrapolation to get _A'_(nseeds &#8594; &#8734;)
     
 
-Total area GeoJSON = 106.26 km^2
+Total area GeoJSON = 106.26 km^2  
 Reference area (PARTRAC) = 44 km^2
 
 | **nseeds** | **nactive** | **Loch Area (km^2)** |
