@@ -106,7 +106,13 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/better-seeding.png" style="height:500px">
-</p> 
+</p>
+
+Due to the offset, larger margins are required:
+
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/geoJSON_2.png" style="height:500px">
+</p>  
 <div style="line-height:50%;">
     <br>
 </div>
@@ -126,6 +132,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
     
 
 Total area GeoJSON = 106.26 km^2
+Reference area (PARTRAC) = 44 km^2
 
 | **nseeds** | **nactive** | **Loch Area (km^2)** |
 |---|---|---|
