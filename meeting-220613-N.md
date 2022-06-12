@@ -108,7 +108,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   <img src="/docs/meeting/better-seeding.png" style="height:500px">
 </p>
 
-Due to the offset, larger margins are required:
+Due to an offset to the East, larger margins are required:
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geoJSON_2.png" style="height:500px">
