@@ -87,23 +87,34 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
  - "derived from Satellite EMODnet shoreline data, relative to MSL."
 
 &#9634; Download EMODnet bathymetry and shoreline data  
-&#9634; Import bathymetry data (should we have done it in the sea lice report!?)  
+&#9634; Import bathymetry data (no seabed in the sea lice report)  
 
 &nbsp;
 <h5>OPENDRIFT</h5>
 &#9989; Find an appropriate seeding technique:
   - using gml files: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example)  
   - using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a>    
-  - <b> using a GSON string</b>: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, 10mn free demo at <a href="www.scribblemaps.com"> scribblemaps.com</a>  
+  - <b> using a GeoJSON string</b>: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
+
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/geojson.png" style="height:500px">
+</p> 
+
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/geojson_area.png" style="height:150px">
+</p> 
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/better-seeding.png" style="height:500px">
 </p> 
+<div style="line-height:50%;">
+    <br>
+</div>
 
 &#9634; (optional?) Calculate the Loch's area, _A'_, and volume, _V'_, using
   - Exact method: the bathymetry & coastline data   
   - Approximate method:
-    + _A'_: area GSON polygon * nactive / (nactive + nstranded)
+    + _A'_: area GeoJSON polygon * nactive / (nactive + nstranded)
     + _V'_: seed on the sea floor, get _z_ for all active particles and neighbour particles to create a polygon
       ```sh
         z='seafloor+0'
@@ -112,6 +123,22 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
           <br>
       </div>
     + more and more precise as nseeds is increased. Graph _A'_ vs. nseeds, does it converge?, use Richardson's extrapolation to get _A'_(nseeds &#8594; &#8734;)
+    
+
+Total area GeoJSON = 106.26 km^2
+
+| **nseeds** | **nactive** | **Loch Area (km^2)** |
+|---|---|---|
+| 512 | 223 | 46.28 |
+| 1024 | 433 | 44.93 |
+| 2048 | 888 | 46.07 |
+| 4096 | 1763 | 45.74 |
+| 8192 | 3500 | 45.40 |
+| 16384 | 7004 | 45.43 |
+| 32768 | 13998 | 45.39 |
+| 65536 | 27884 | 45.21 |
+| 131072 | 55770 | 45.21 |
+
 
 &#9634; Run an Opendrift simulation      
   * evenly-spaced particles (what depth?), control spacing or number of particles  
@@ -122,7 +149,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
     <div style="line-height:50%;">
         <br>
     </div> 
-  * flushing time _Tf'_: when 67% are gone (write `is_particle_in_GSON_polygon()`)
+  * flushing time _Tf'_: when 67% are gone (write `is_particle_in_GeoJSON_polygon()`)
   * tidal range _R'_
   
 &#9634; Repeat simulation for different tide conditions (10 times)  
