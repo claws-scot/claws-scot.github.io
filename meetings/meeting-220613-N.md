@@ -7,17 +7,22 @@ nav-short: true
 
 ## Nutrients module
 
-- Reproduce the work presented in the PARTRAC report (uses MIKE 21).  
 - Nutrient: Nitrogen (N), 2 sources
   + dissolved ammonia  
   + particulate waste emissions re-dissolving into the water column from the seabed   
+
+&nbsp;
+<h5>GOALS</h5> 
+- Reproduce the work presented in the PARTRAC report (uses MIKE 21)   
+  + Estimate flushing time, ECE and NEI from the work of Gillibrand (2002)  
+  + Compute flushing time in OpenDrift
   
 &nbsp;
 <h5>ECE & NEI ESTIMATIONS</h5>  
-&#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
+&#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class (Edwards & Sharples, 1986)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
-&#9989; Understand why they used 2 values of _S_: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
+&#9989; Understand why 2 values of _S_ are used: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
   - function of stocking, feeding and harvesting strategies employed during cultivation
   - amount of N released = input amount - amount incorporated into fish growth  
 
@@ -27,7 +32,7 @@ nav-short: true
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
-- Loch Long using the data circled in red:  
+- Loch Long implementation using the data circled in red:  
     ```python
     class LochLong(Loch):
         def __init__(self):
@@ -59,7 +64,7 @@ nav-short: true
 &nbsp;
 <h5>BATHYMETRY</h5>
 
-  - Scotland's bathymetry data in OD too coarse
+  - Scotland's bathymetry data in OpenDrift is too coarse
   
 <p align="center">
   <img src="/docs/meeting/OD_seabed_1.png" style="height:200px">
@@ -140,7 +145,7 @@ A polygon is drawn around a Loch with all many edges as desidered ...
     
 
 NB: primed quantities are quantities extracted from OpenDrift simulations  
-Non primed symbols are found in Edwards and Sharples (1986).    
+Non-primed quantities are found in Edwards and Sharples (1986).    
     
 
 Total area GeoJSON = 106.26 km<sup>2</sup>  
