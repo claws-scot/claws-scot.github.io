@@ -18,7 +18,11 @@ nav-short: true
   + Compute flushing time in OpenDrift
   
 &nbsp;
-<h5>2. ECE & NEI ESTIMATIONS</h5>  
+<h5>2. ECE & NEI ESTIMATIONS</h5>
+
+<p><b>NB</b>: on this page, non-primed quantities are found in Edwards and Sharples (1986).  
+Primed quantities are quantities extracted from OpenDrift simulations.</p>
+  
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class (Edwards & Sharples, 1986)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
@@ -142,10 +146,6 @@ A polygon is drawn around a loch with as many edges as desired ...
           <br>
       </div>
     + more and more precise as nseeds is increased. Graph _A'_ vs. nseeds, does it converge?, use Richardson's extrapolation to get _A'_(nseeds &#8594; &#8734;)
-    
-
-NB: primed quantities are quantities extracted from OpenDrift simulations  
-Non-primed quantities are found in Edwards and Sharples (1986).    
     
 
 Total area GeoJSON = 106.26 km<sup>2</sup>  
