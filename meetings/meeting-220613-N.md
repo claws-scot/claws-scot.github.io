@@ -148,9 +148,9 @@ A polygon is drawn around a loch with as many edges as necessary ...
     
 
 Total GeoJSON area (land + loch) = 106.26 km<sup>2</sup>  
-Reference area (PARTRAC) = 44 km<sup>2</sup>
-Edwards and Sharples, Low-Water area = 41.2 km<sup>2</sup>
-Edwards and Sharples, High-Water area = 43.4 km<sup>2</sup>
+Reference area (PARTRAC) = 44 km<sup>2</sup>  
+Edwards and Sharples, Low-Water area = 41.2 km<sup>2</sup>  
+Edwards and Sharples, High-Water area = 43.4 km<sup>2</sup>  
 
 | **nseeds** | **nactive** | **Loch Area (km^2)** |
 |---|---|---|
