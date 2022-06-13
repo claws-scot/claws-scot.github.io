@@ -17,9 +17,11 @@ nav-short: true
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
-&#9634; Understand why they used 2 values of S: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
+&#9989; Understand why they used 2 values of `S`: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
   - function of stocking, feeding and harvesting strategies employed during cultivation
   - amount of N released = input amount - amount incorporated into fish growth  
+
+&#8680; Meeting outcome: S = 40.64 kgN/tonne-prod. is most likely a user input  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
@@ -82,6 +84,9 @@ nav-short: true
   
 Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
 
+&#8680; Meeting outcome: Vincent will download the EMODnet bathymetry for use in the Waste module
+&#8680; Meeting outcome: Tom to send Vincent the FOC bathymetry data
+
 &nbsp;
 <h5>SHORELINES</h5>
  - "derived from Satellite EMODnet shoreline data, relative to MSL."
@@ -96,19 +101,22 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   - <strike>using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a></strike>    
   - <b> using a GeoJSON string</b>: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
 
+A polygon is drawn around a Loch with all many edges as desidered ...
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geojson.png" style="height:500px">
 </p> 
 
+... and the area can readily be extracted ...  
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geojson_area.png" style="height:150px">
-</p> 
-
+</p>
+ 
+... but there would seem to be a small shift eastwards (projection inconsistency) ...   
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/better-seeding.png" style="height:500px">
 </p>
 
-Due to an offset to the East, larger margins are required:
+... Larger margins are then required:
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geoJSON_2.png" style="height:500px">
@@ -117,7 +125,7 @@ Due to an offset to the East, larger margins are required:
     <br>
 </div>
 
-&#9634; (optional?) Calculate the Loch's area, _A'_, and volume, _V'_, using
+&#9634; Calculate the Loch's area, _A'_, and volume, _V'_, using
   - Exact method: the bathymetry & coastline data   
   - Approximate method:
     + _A'_: area GeoJSON polygon * nactive / (nactive + nstranded)
@@ -131,8 +139,12 @@ Due to an offset to the East, larger margins are required:
     + more and more precise as nseeds is increased. Graph _A'_ vs. nseeds, does it converge?, use Richardson's extrapolation to get _A'_(nseeds &#8594; &#8734;)
     
 
-Total area GeoJSON = 106.26 km^2  
-Reference area (PARTRAC) = 44 km^2
+NB: primed quantities are quantities extracted from OpenDrift simulations  
+Non primed symbols are found in Edwards and Sharples (1986).    
+    
+
+Total area GeoJSON = 106.26 km<sup>2</sup>  
+Reference area (PARTRAC) = 44 km<sup>2</sup>
 
 | **nseeds** | **nactive** | **Loch Area (km^2)** |
 |---|---|---|
@@ -148,6 +160,8 @@ Reference area (PARTRAC) = 44 km^2
 
 
 &#9634; Run an Opendrift simulation      
+&#8680; Meeting outcome: Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
+  * derive tidal range _R'_ from the hydrodynamic simulation
   * evenly-spaced particles (what depth?), control spacing or number of particles  
   * seeds on land aren't moved back into the sea:
     ```sh
@@ -156,9 +170,7 @@ Reference area (PARTRAC) = 44 km^2
     <div style="line-height:50%;">
         <br>
     </div> 
-  * flushing time _Tf'_: when 67% are gone (write `is_particle_in_GeoJSON_polygon()`)
-  * tidal range _R'_
+  * flushing time _Tf'_: when 63% are gone (write `is_particle_in_GeoJSON_polygon()`)
   
-&#9634; Repeat simulation for different tide conditions (10 times)  
 &#9634; Find best fit for nparticles vs. time, get averaged _Tf'_   
 &#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R'_ and _Tf'_  
