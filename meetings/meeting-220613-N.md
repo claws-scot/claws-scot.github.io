@@ -30,7 +30,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
   - function of stocking, feeding and harvesting strategies employed during cultivation
   - amount of N released = input amount - amount incorporated into fish growth  
 
-&#8680; Meeting outcome: _S_ = 40.64 kgN/tonne-prod. is most likely a user input  
+&#8680; <u>Meeting outcome</u>: _S_ = 40.64 kgN/tonne-prod. is most likely a user input  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
@@ -93,8 +93,8 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
   
 Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
 
-&#8680; Meeting outcome: Vincent will download the EMODnet bathymetry for use in the Waste module
-&#8680; Meeting outcome: Tom to send Vincent the FOC bathymetry data
+&#8680; <u>Meeting outcome</u>: Vincent will download the EMODnet bathymetry for use in the Waste module
+&#8680; <u>Meeting outcome</u>: Tom to send Vincent the FOC bathymetry data
 
 &nbsp;
 <h5>4. SHORELINES</h5>
@@ -165,7 +165,7 @@ Reference area (PARTRAC) = 44 km<sup>2</sup>
 
 
 &#9634; Run an Opendrift simulation      
-&#8680; Meeting outcome: Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
+&#8680; <u>Meeting outcome</u>: Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
   * derive tidal range _R'_ from the hydrodynamic simulation
   * evenly-spaced particles (what depth?), control spacing or number of particles  
   * seeds on land aren't moved back into the sea:
