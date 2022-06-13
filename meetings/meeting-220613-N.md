@@ -20,7 +20,7 @@ nav-short: true
 &nbsp;
 <h5>2. ECE & NEI ESTIMATIONS</h5>
 
-<p><b>NB</b>: on this page, non-primed quantities are found in Edwards and Sharples (1986).  
+<p><b>NB</b>: on this page, non-primed quantities are found in or derived from Edwards and Sharples (1986), "Sea Lochs: a Catalogue".  
 Primed quantities are quantities extracted from OpenDrift simulations.</p>
   
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class  
