@@ -74,14 +74,13 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
   <img src="/docs/meeting/OD_seabed_1.png" style="height:200px">
 </p>  
 
-<p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/bathymetry-data.png" style="height:200px">
-</p>
+Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>  
 
   - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.  
     + <a href="https://data.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/pages/seabed-mapping-services">data.admiralty.co.uk seabed-mapping-services</a>  
     + <a href="https://seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00">seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00</a>  
-    + file format for free download is set to ASCII or BAG  
+    + file format for free download is set to ASCII or BAG
+    + Loch Long area near Ardentinny is missing!  
     
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/admiralty.png" style="height:300px">
@@ -91,10 +90,10 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
   - <b>EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, under certain licence conditions. This data covers the NE Atlantic region.</b>   
   - <strike>GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, under certain licence conditions.  This data covers the globe.</strike>
   
-Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>
-
-&#8680; <u>Meeting outcome</u>: Vincent will download the EMODnet bathymetry for use in the Waste module
-&#8680; <u>Meeting outcome</u>: Tom to send Vincent the FOC bathymetry data
+<p><b>NB</b>: 1 arcseconds ~ 17.8 m at 55 deg. latitude</p>
+  
+&#8680; <u>Meeting outcome</u>: Vincent to download the EMODnet bathymetry data for use in the Waste module  
+&#8680; <u>Meeting outcome</u>: Tom to send Vincent the FOC bathymetry data  
 
 &nbsp;
 <h5>4. SHORELINES</h5>
