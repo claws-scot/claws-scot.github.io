@@ -106,7 +106,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   - <strike>using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a></strike>    
   - <b> using a GeoJSON string</b>: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
 
-A polygon is drawn around a Loch with all many edges as desidered ...
+A polygon is drawn around a loch with as many edges as desired ...
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geojson.png" style="height:500px">
 </p> 
@@ -116,12 +116,12 @@ A polygon is drawn around a Loch with all many edges as desidered ...
   <img src="/docs/meeting/geojson_area.png" style="height:150px">
 </p>
  
-... but there would seem to be a small shift eastwards (projection inconsistency) ...   
+... but there would seem to be a small eastwards shift (projection inconsistency between the website and OpenDrift?) ...   
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/better-seeding.png" style="height:500px">
 </p>
 
-... Larger margins are then required:
+... Larger margins (coarser polygon) are then required:
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geoJSON_2.png" style="height:500px">
