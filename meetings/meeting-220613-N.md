@@ -23,7 +23,7 @@ nav-short: true
 <p><b>NB</b>: on this page, non-primed quantities are found in Edwards and Sharples (1986).  
 Primed quantities are quantities extracted from OpenDrift simulations.</p>
   
-&#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class (Edwards & Sharples, 1986)  
+&#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
 &#9989; Understand why 2 values of _S_ are used: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
