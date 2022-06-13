@@ -16,7 +16,6 @@ nav-short: true
   <a href="https://claws-scot.github.io/umls/#5-farms" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Farms</a>
   <a href="https://claws-scot.github.io/umls/#6-quadtrees" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 6. Quadtrees</a>
   <a href="https://claws-scot.github.io/umls/#7-probe" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Probe</a>
-  <a href="https://claws-scot.github.io/tutorials"><b>Tutos</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

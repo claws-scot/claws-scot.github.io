@@ -17,11 +17,11 @@ nav-short: true
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` (Edwards & Sharples)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
-&#9989; Understand why they used 2 values of `S`: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
+&#9989; Understand why they used 2 values of _S_: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
   - function of stocking, feeding and harvesting strategies employed during cultivation
   - amount of N released = input amount - amount incorporated into fish growth  
 
-&#8680; Meeting outcome: S = 40.64 kgN/tonne-prod. is most likely a user input  
+&#8680; Meeting outcome: _S_ = 40.64 kgN/tonne-prod. is most likely a user input  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
