@@ -12,13 +12,13 @@ nav-short: true
   + particulate waste emissions re-dissolving into the water column from the seabed   
 
 &nbsp;
-<h5>GOALS</h5> 
+<h5>1. GOALS</h5> 
 - Reproduce the work presented in the PARTRAC report (uses MIKE 21)   
   + Estimate flushing time, ECE and NEI from the work of Gillibrand (2002)  
   + Compute flushing time in OpenDrift
   
 &nbsp;
-<h5>ECE & NEI ESTIMATIONS</h5>  
+<h5>2. ECE & NEI ESTIMATIONS</h5>  
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class (Edwards & Sharples, 1986)  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
@@ -62,7 +62,7 @@ nav-short: true
     </div>
 
 &nbsp;
-<h5>BATHYMETRY</h5>
+<h5>3. BATHYMETRY</h5>
 
   - Scotland's bathymetry data in OpenDrift is too coarse
   
@@ -93,14 +93,14 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
 &#8680; Meeting outcome: Tom to send Vincent the FOC bathymetry data
 
 &nbsp;
-<h5>SHORELINES</h5>
+<h5>4. SHORELINES</h5>
  - "derived from Satellite EMODnet shoreline data, relative to MSL."
 
 &#9634; Download EMODnet bathymetry and shoreline data  
 &#9634; Import bathymetry data (no seabed in the sea lice report)  
 
 &nbsp;
-<h5>OPENDRIFT</h5>
+<h5>5. OPENDRIFT</h5>
 &#9989; Find an appropriate seeding technique:
   - <strike>using gml files: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example) </strike>   
   - <strike>using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a></strike>    
