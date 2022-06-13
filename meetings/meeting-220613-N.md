@@ -164,6 +164,8 @@ Edwards and Sharples, High-Water area = 43.4 km<sup>2</sup>
 | 65536 | 27884 | 45.21 |
 | 131072 | 55770 | 45.21 |
 
+<p><b>NB</b>: Move the Loch's mouth northwards a bit</p>
+
 
 &#9634; Run an Opendrift simulation      
 &#8680; <u>Meeting outcome</u>: Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
