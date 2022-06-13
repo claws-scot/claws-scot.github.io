@@ -90,7 +90,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   - <b>EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, under certain licence conditions. This data covers the NE Atlantic region.</b>   
   - <strike>GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, under certain licence conditions.  This data covers the globe.</strike>
   
-<p><b>NB</b>: 1 arcseconds ~ 17.8 m at 55 deg. latitude</p>
+<p><b>NB</b>: 1 arcsecond ~ 17.8 m at 55 deg. latitude</p>
   
 &#8680; <u>Meeting outcome</u>: Vincent to download the EMODnet bathymetry data for use in the Waste module  
 &#8680; <u>Meeting outcome</u>: Tom to send Vincent the FOC bathymetry data  
