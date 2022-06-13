@@ -133,11 +133,11 @@ A polygon is drawn around a loch with as many edges as necessary ...
     <br>
 </div>
 
-&#9634; Calculate the Loch's area, _A'_, and volume, _V'_, using
+&#9634; Calculate the Loch's area, _A'_, and volume, _V'_, using an
   - Exact method: the bathymetry & coastline data   
   - Approximate method:
     + _A'_: area GeoJSON polygon * nactive / (nactive + nstranded)
-    + _V'_: seed on the sea floor, get _z_ for all active particles and neighbour particles to create a polygon
+    + _V'_: seed on the sea floor, get _z_ for all active particles and neighbour particles to create polygons whose base lies at sea level  
       ```sh
         z='seafloor+0'
       ```
