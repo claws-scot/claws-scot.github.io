@@ -165,7 +165,7 @@ Reference area (PARTRAC) = 44 km<sup>2</sup>
 
 &#9634; Run an Opendrift simulation      
 &#8680; <u>Meeting outcome</u>: Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
-  * derive tidal range _R'_ from the hydrodynamic simulation
+  * derive tidal range _R'_ from the hydrodynamics simulation
   * evenly-spaced particles (what depth?), control spacing or number of particles  
   * seeds on land aren't moved back into the sea:
     ```sh
@@ -176,5 +176,5 @@ Reference area (PARTRAC) = 44 km<sup>2</sup>
     </div> 
   * flushing time _Tf'_: when 63% are gone (write `is_particle_in_GeoJSON_polygon()`)
   
-&#9634; Find best fit for nparticles vs. time, get averaged _Tf'_   
-&#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R'_ and _Tf'_  
+&#9634; Find best fit for nparticles vs. time, get _Tf'_   
+&#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R/R'_ and _Tf'_  
