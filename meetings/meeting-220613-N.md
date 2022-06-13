@@ -100,7 +100,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
  - "derived from Satellite EMODnet shoreline data, relative to MSL."
 
 &#9634; Download EMODnet bathymetry and shoreline data  
-&#9634; Import bathymetry data (no seabed in the sea lice report)  
+&#9634; Import bathymetry data    
 
 &nbsp;
 <h5>5. OPENDRIFT</h5>
@@ -109,7 +109,7 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
   - <strike>using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a></strike>    
   - <b> using a GeoJSON string</b>: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
 
-A polygon is drawn around a loch with as many edges as desired ...
+A polygon is drawn around a loch with as many edges as necessary ...
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geojson.png" style="height:500px">
 </p> 
@@ -124,7 +124,7 @@ A polygon is drawn around a loch with as many edges as desired ...
   <img src="/docs/meeting/better-seeding.png" style="height:500px">
 </p>
 
-... Larger margins (coarser polygon) are then required:
+... Coarser polygon - larger margins required:
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geoJSON_2.png" style="height:500px">
