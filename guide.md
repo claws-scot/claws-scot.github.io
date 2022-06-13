@@ -12,7 +12,6 @@ nav-short: true
   <a href="https://claws-scot.github.io/ensemble-averaging" style="padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; Ensemble averaging</a>
   <a href="https://claws-scot.github.io/quadtree-structure" style="padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; Quadtree structure</a>
   <a href="https://claws-scot.github.io/umls"><b>UML diagrams</b></a>
-  <a href="https://claws-scot.github.io/tutorials"><b>Tutos</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
