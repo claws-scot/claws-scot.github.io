@@ -92,8 +92,8 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
 &nbsp;
 <h5>OPENDRIFT</h5>
 &#9989; Find an appropriate seeding technique:
-  - using gml files: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example)  
-  - using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a>    
+  - <strike>using gml files: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example) </strike>   
+  - <strike>using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a></strike>    
   - <b> using a GeoJSON string</b>: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
