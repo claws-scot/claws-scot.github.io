@@ -47,7 +47,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
     <div style="line-height:50%;">
         <br>
     </div>
-- Results of test_ECE.py are matching the Excel sheet's outputs  
+- Results of test_ECE.py (see: <a href="https://github.com/vincentcasseau/CLAWS/blob/main/tests/test_ECE.py">here</a>) are matching the Excel sheet's outputs  
     ```
     Existing biomass:
     Salmon Farm's ECE (kg/m^3) = 3.595962e-07
