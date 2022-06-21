@@ -63,15 +63,16 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 &#9989; Draw nparticles vs. time, get _Tf'_   
 &#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R/R'_ and _Tf'_  
 
-Initially:
+Using 252 active particles seeded uniformly in lon/lat and with a random initial depth comprised between [-10, 0] m (no seabed):    
+- At t = 0:
 <p align="center">
   <img src="/docs/meeting/concentration_0000.png" style="height:500px">
 </p> 
-At 'flushing time':
+- At t slightly greater than 'flushing time':
 <p align="center">
   <img src="/docs/meeting/concentration_2280.png" style="height:500px">
 </p> 
-nparticles vs. time:
+- nparticles vs. time:
 <p align="center">
-  <img src="/docs/meeting/flushing_time.png" style="height:500px">
+  <img src="/docs/meeting/flushing_time.png" style="height:350px">
 </p> 
