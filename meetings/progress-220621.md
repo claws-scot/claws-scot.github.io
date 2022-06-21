@@ -7,7 +7,6 @@ nav-short: true
 
 ## Nutrients module
 
-&nbsp;
 <h5>GOALS</h5> 
 - Reproduce the work presented in the PARTRAC report (uses MIKE 21)   
   + Estimate flushing time, ECE and NEI from the work of Gillibrand (2002)  
@@ -17,14 +16,12 @@ nav-short: true
 <p>NB: on this page, non-primed quantities are found in or derived from Edwards and Sharples (1986), "Sea Lochs: a Catalogue".  
 Primed quantities are quantities extracted from OpenDrift simulations.</p>
   
-&nbsp;
 <h5>1. ECE & NEI ESTIMATIONS</h5>
 
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI   
 
-&nbsp;
 <h5>2. BATHYMETRY AND SHORELINES</h5>
 
   - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model and covers the NE Atlantic region. 1 arcsecond ~ 17.8 m at 55 deg. latitude  
@@ -33,7 +30,6 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 &#9989; Download the EMODnet bathymetry and shoreline data  
 &#9634; Import and plot bathymetry data on terrain map     
 
-&nbsp;
 <h5>3. OPENDRIFT</h5>
 &#9989; Seed particles using a GeoJSON string: <a href="http://geojson.io/">geojson.io</a>. A polygon is drawn around a loch with as many edges as necessary:
 <p align="center">
