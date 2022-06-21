@@ -35,9 +35,6 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 <p align="center">
   <img src="/docs/meeting/geoJSON_2.png" style="height:300px">
 </p>  
-<div style="line-height:50%;">
-    <br>
-</div>
 
 &#9634; Calculate the Loch's area, _A'_, and volume, _V'_, using an approximate method:
   + _A'_: area GeoJSON polygon * nactive / (nactive + nstranded)
@@ -48,7 +45,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
       <div style="line-height:50%;">
           <br>
       </div>
-    + Graph _A'/V'_ vs. nseeds  
+  + Graph _A'/V'_ vs. nseeds  
     
 
 Total GeoJSON area (land + loch) = 106.26 km<sup>2</sup>  
