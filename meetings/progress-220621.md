@@ -63,29 +63,17 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 &nbsp;
 <h5>3. BATHYMETRY and SHORELINES</h5>
 
-  - <b>EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, under certain licence conditions. This data covers the NE Atlantic region.</b>   
+  - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model and covers the NE Atlantic region. 1 arcsecond ~ 17.8 m at 55 deg. latitude  
   
-<p><b>NB</b>: 1 arcsecond ~ 17.8 m at 55 deg. latitude</p>
-
-Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a> 
-  
- - Vincent to download the EMODnet bathymetry data for use in the Waste module  
- &#9989; Tom to send Vincent the FOC bathymetry data  
-
-&nbsp;
-<h5>4. SHORELINES</h5>
- - "derived from Satellite EMODnet shoreline data, relative to MSL."
-
+&#9989; Tom to send Vincent the FOC bathymetry data  
 &#9634; Download EMODnet bathymetry and shoreline data  
-&#9634; Import bathymetry data    
+&#9634; Import and plot bathymetry data on terrain map     
 
 &nbsp;
 <h5>4. OPENDRIFT</h5>
-&#9989; Seed particles using a GeoJSON string: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
-
-A polygon is drawn around a loch with as many edges as necessary ...
+&#9989; Seed particles using a GeoJSON string: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>. A polygon is drawn around a loch with as many edges as necessary:
 <p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/geoJSON_2.png" style="height:500px">
+  <img src="/docs/meeting/geoJSON_2.png" style="height:350px">
 </p>  
 <div style="line-height:50%;">
     <br>
@@ -110,7 +98,7 @@ Reference area (PARTRAC) = 44 km<sup>2</sup>
 Edwards and Sharples, Low-Water area = 41.2 km<sup>2</sup>  
 Edwards and Sharples, High-Water area = 43.4 km<sup>2</sup>  
 
-| **nseeds** | **nactive** | **Loch Area (km^2)** |
+| **nseeds** | **nactive** | <b>Loch Area (km<sup>2</sup>)</b> |
 |---|---|---|
 | 512 | 223 | 46.28 |
 | 1024 | 433 | 44.93 |
@@ -122,21 +110,16 @@ Edwards and Sharples, High-Water area = 43.4 km<sup>2</sup>
 | 65536 | 27884 | 45.21 |
 | 131072 | 55770 | 45.21 |
 
-<p><b>NB</b>: Move the Loch's mouth northwards a bit</p>
-
-
-&#9989; Run an Opendrift simulation      
 &#9989; Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
-&nbsp; &#9989; derive tidal range _R'_ from the hydrodynamics simulation
-&nbsp; &#9989; evenly-spaced particles, random depth, control spacing or number of particles  
-&nbsp; &#9989; seeds on land aren't moved back into the sea:
+&#9989; Derive tidal range _R'_ from the hydrodynamics simulation: 2.1 m  
+&#9989; Run an Opendrift simulation      
+ - evenly-spaced particles, random depth, control spacing or number of particles  
+ - seeds on land aren't moved back into the sea:  
     ```sh
     o.set_config('seed:ocean_only', False)
     ```
     <div style="line-height:50%;">
         <br>
     </div> 
-&nbsp; &#9989; flushing time _Tf'_: when 63% are gone (write `is_particle_in_GeoJSON_polygon()`)
-  
 &#9989; Draw nparticles vs. time, get _Tf'_   
 &#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R/R'_ and _Tf'_  
