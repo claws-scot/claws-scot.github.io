@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CLAWS
-subtitle: Meeting - June 13th
+subtitle: Progress - June 21st
 nav-short: true
 ---
 
@@ -26,11 +26,6 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 &#9989; Add Loch's area, _A_, volume, _V_, and tidal range, _R_, to `Loch` class  
 &#9989; Estimate flushing rate and flushing time, _Tf_  
 &#9989; Derive ECE and NEI (see Results from test_ECE.py below)  
-&#9989; Understand why 2 values of _S_ are used: 48.2 kgN/tonne-prod. (existing biomass column), and 40.64 kgN/tonne-prod. (options 1-3 columns)     
-  - function of stocking, feeding and harvesting strategies employed during cultivation
-  - amount of N released = input amount - amount incorporated into fish growth  
-
-&#8680; <u>Meeting outcome</u>: _S_ = 40.64 kgN/tonne-prod. is most likely a user input  
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
@@ -66,34 +61,16 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
     </div>
 
 &nbsp;
-<h5>3. BATHYMETRY</h5>
+<h5>3. BATHYMETRY and SHORELINES</h5>
 
-  - Scotland's bathymetry data in OpenDrift is too coarse
-  
-<p align="center">
-  <img src="/docs/meeting/OD_seabed_1.png" style="height:200px">
-</p>  
-
-Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a>  
-
-  - The UKHO offer survey data from UKHO marine data portal under open licence.  This tends to cover inshore areas of the UK, and includes data surveyed by Marine Scotland.  
-    + <a href="https://data.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/pages/seabed-mapping-services">data.admiralty.co.uk seabed-mapping-services</a>  
-    + <a href="https://seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00">seabed.admiralty.co.uk/?x=-19567.88&y=6780270.16&z=5.00</a>  
-    + file format for free download is set to ASCII or BAG
-    + Loch Long area near Ardentinny is missing!  
-    
-<p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/admiralty.png" style="height:300px">
-</p>
-    
-  - <strike>OceanWise offer a 1 arcsecond digital elevation model under commercial licence. This covers UK waters.</strike>   
   - <b>EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model for free, under certain licence conditions. This data covers the NE Atlantic region.</b>   
-  - <strike>GEBCO offer a 1/4 arcminute (15 arcseconds) digital elevation model for free, under certain licence conditions.  This data covers the globe.</strike>
   
 <p><b>NB</b>: 1 arcsecond ~ 17.8 m at 55 deg. latitude</p>
+
+Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.scot/taxonomy/term/17/</a> 
   
-&#8680; <u>Meeting outcome</u>: Vincent to download the EMODnet bathymetry data for use in the Waste module  
-&#8680; <u>Meeting outcome</u>: Tom to send Vincent the FOC bathymetry data  
+ - Vincent to download the EMODnet bathymetry data for use in the Waste module  
+ &#9989; Tom to send Vincent the FOC bathymetry data  
 
 &nbsp;
 <h5>4. SHORELINES</h5>
@@ -103,29 +80,10 @@ Reference: <a href="http://marine.gov.scot/taxonomy/term/17/">http://marine.gov.
 &#9634; Import bathymetry data    
 
 &nbsp;
-<h5>5. OPENDRIFT</h5>
-&#9989; Find an appropriate seeding technique:
-  - <strike>using gml files: <a href="https://opendrift.github.io/gallery/example_seed_demonstration.html">opendrift.github.io/gallery/example_seed_demonstration</a> (see last example) </strike>   
-  - <strike>using shape files: <a href="https://opendrift.github.io/gallery/example_seed_from_shapefile.html">opendrift.github.io/gallery/example_seed_from_shapefile</a></strike>    
-  - <b> using a GeoJSON string</b>: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
+<h5>4. OPENDRIFT</h5>
+&#9989; Seed particles using a GeoJSON string: <a href="https://opendrift.github.io/gallery/example_seed_geojson.html">opendrift.github.io/gallery/example_seed_geojson</a>, <a href="http://geojson.io/">geojson.io</a>  
 
 A polygon is drawn around a loch with as many edges as necessary ...
-<p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/geojson.png" style="height:500px">
-</p> 
-
-... and the area can readily be extracted ...  
-<p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/geojson_area.png" style="height:150px">
-</p>
- 
-... but there would seem to be a small eastwards shift (projection inconsistency between the website and OpenDrift?) ...   
-<p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/better-seeding.png" style="height:500px">
-</p>
-
-... Coarser polygon - larger margins required:
-
 <p align="center" style="border-style:solid; border:2; border-color:black">
   <img src="/docs/meeting/geoJSON_2.png" style="height:500px">
 </p>  
@@ -167,18 +125,18 @@ Edwards and Sharples, High-Water area = 43.4 km<sup>2</sup>
 <p><b>NB</b>: Move the Loch's mouth northwards a bit</p>
 
 
-&#9634; Run an Opendrift simulation      
-&#8680; <u>Meeting outcome</u>: Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
-  * derive tidal range _R'_ from the hydrodynamics simulation
-  * evenly-spaced particles (what depth?), control spacing or number of particles  
-  * seeds on land aren't moved back into the sea:
+&#9989; Run an Opendrift simulation      
+&#9989; Tom to send Vincent a hydrodynamics solution file for Loch Long over a period of 10 days (slightly longer time than the flushing time predicted by PARTRAC)  
+&nbsp; &#9989; derive tidal range _R'_ from the hydrodynamics simulation
+&nbsp; &#9989; evenly-spaced particles, random depth, control spacing or number of particles  
+&nbsp; &#9989; seeds on land aren't moved back into the sea:
     ```sh
     o.set_config('seed:ocean_only', False)
     ```
     <div style="line-height:50%;">
         <br>
     </div> 
-  * flushing time _Tf'_: when 63% are gone (write `is_particle_in_GeoJSON_polygon()`)
+&nbsp; &#9989; flushing time _Tf'_: when 63% are gone (write `is_particle_in_GeoJSON_polygon()`)
   
-&#9634; Find best fit for nparticles vs. time, get _Tf'_   
+&#9989; Draw nparticles vs. time, get _Tf'_   
 &#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R/R'_ and _Tf'_  
