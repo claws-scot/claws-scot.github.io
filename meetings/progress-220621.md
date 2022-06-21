@@ -48,23 +48,6 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
   + Graph _A'/V'_ vs. nseeds  
     
 
-Total GeoJSON area (land + loch) = 106.26 km<sup>2</sup>  
-Reference area (PARTRAC) = 44 km<sup>2</sup>  
-Edwards and Sharples, Low-Water area = 41.2 km<sup>2</sup>  
-Edwards and Sharples, High-Water area = 43.4 km<sup>2</sup>  
-
-| **nseeds** | **nactive** | <b>Loch Area (km<sup>2</sup>)</b> |
-|---|---|---|
-| 512 | 223 | 46.28 |
-| 1024 | 433 | 44.93 |
-| 2048 | 888 | 46.07 |
-| 4096 | 1763 | 45.74 |
-| 8192 | 3500 | 45.40 |
-| 16384 | 7004 | 45.43 |
-| 32768 | 13998 | 45.39 |
-| 65536 | 27884 | 45.21 |
-| 131072 | 55770 | 45.21 |
-
 &#9989; Create hydrodynamics solution file for Loch Long over a period of 10+ days (slightly longer time than the flushing time predicted by PARTRAC)  
 &#9989; Derive tidal range _R'_ from the hydrodynamics simulation: 2.1 m  
 &#9989; Run an Opendrift simulation      
