@@ -118,7 +118,8 @@ At t slightly greater than 'flushing time':
   <img src="/docs/meeting/220623/flushing_time.png" style="width:400px">
 </p>  
 
-
+For an existing biomass of 500 tonnes,  
+Using Loch Long's data from the PARTRAC report (already verified in W1.):   
 
 ```python
 Loch Long's flushing time (day) = 9.57
@@ -127,7 +128,10 @@ Salmon Farm's ECE (kg/m^3) = 3.595962e-07
 Salmon Farm's ECE (ug/L) = 0.359596
 Salmon Farm's ECE (umol/L) = 0.025685
 Salmon Farm's nutrient enhancement index = 1
+```
 
+Using Loch Long's data from the hydrodynamics and particulate simulations:  
+```python
 Loch Long's flushing time (day) = 16.05
 Existing biomass - comp.:
 Salmon Farm's ECE (kg/m^3) = 6.153615e-07
@@ -136,6 +140,7 @@ Salmon Farm's ECE (umol/L) = 0.043954
 Salmon Farm's nutrient enhancement index = 1
 ```
 
+&nbsp;
 <h5>N4. FUTURE WORK</h5>
  - Suggestions?
  - Preliminary discussion about the Waste (W) module?
