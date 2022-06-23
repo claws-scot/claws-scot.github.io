@@ -86,8 +86,15 @@ Initially:
 </p> 
 At t slightly greater than 'flushing time':
 <p align="center">
-  <img src="/docs/meeting/concentration_0360.png" style="height:600px">
+  <img src="/docs/meeting/220623/concentration_0360.png" style="height:600px">
 </p> 
+
+<p align="center">
+<video height="600" autoplay>
+  <source src="/docs/meeting/220623/concentration.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
+</p>
     
 
 <h5>N3. FLUSHING TIME & ECE COMPARISON</h5>
