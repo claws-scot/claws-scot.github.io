@@ -155,6 +155,10 @@ To be compared against PARTRAC's report:
   <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
 </p>
 
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/220623/PARTRAC-ECE.png" style="width:400px">
+</p> 
+
 &nbsp;
 <h5>N4. FUTURE WORK</h5>
  - Suggestions?
