@@ -53,34 +53,34 @@ The <i>get_lonlat_bins</i> function presented in the <a href="https://claws-scot
 
 ```python
 def get_lonlat_bins(self, pixelsize_m, **kwargs):
-        if 'corners' in kwargs:
-            # Impose the extent of the domain
-            lonmin, lonmax, latmin, latmax = kwargs['corners']
-            if pixelsize_m is None:
-                # Inputs were in fact lon_bincenter, binlength/2
-                #                     lat_bincenter, binwidth/2
-                # For clarity, these are renamed
-                latcen = latmin
-                loncen = lonmin
-                dlat = latmax
-                dlon = lonmax
-                # Sub-divide a bin into a new 2x2 domain
-                latbin = np.array([latcen - dlat, latcen, latcen + dlat])
-                lonbin = np.array([loncen - dlon, loncen, loncen + dlon])
-            else:
-                latmid = np.radians((latmin + latmax)/2.0)
-                # m to degrees, correct within 1 cm
-                deltalat = pixelsize_m / ( 111320.92 - 559.82*np.cos(2.*latmid)
-                    + 1.175*np.cos(4.*latmid) - 0.0023*np.cos(6.*latmid) )
-                deltalon = pixelsize_m / (111412.84*np.cos(latmid)
-                    - 93.5*np.cos(3.*latmid) + 0.118*np.cos(5.*latmid) )
-                latbin = np.arange(latmin, latmax, deltalat)
-                lonbin = np.arange(lonmin, lonmax, deltalon)
+    if 'corners' in kwargs:
+        # Impose the extent of the domain
+        lonmin, lonmax, latmin, latmax = kwargs['corners']
+        if pixelsize_m is None:
+            # Inputs were in fact lon_bincenter, binlength/2
+            #                     lat_bincenter, binwidth/2
+            # For clarity, these are renamed
+            latcen = latmin
+            loncen = lonmin
+            dlat = latmax
+            dlon = lonmax
+            # Sub-divide a bin into a new 2x2 domain
+            latbin = np.array([latcen - dlat, latcen, latcen + dlat])
+            lonbin = np.array([loncen - dlon, loncen, loncen + dlon])
         else:
-            # Determine the extent of the domain from the particles' position
-            [...]
-            
-        return lonbin, latbin
+            latmid = np.radians((latmin + latmax)/2.0)
+            # m to degrees, correct within 1 cm
+            deltalat = pixelsize_m / ( 111320.92 - 559.82*np.cos(2.*latmid)
+                + 1.175*np.cos(4.*latmid) - 0.0023*np.cos(6.*latmid) )
+            deltalon = pixelsize_m / (111412.84*np.cos(latmid)
+                - 93.5*np.cos(3.*latmid) + 0.118*np.cos(5.*latmid) )
+            latbin = np.arange(latmin, latmax, deltalat)
+            lonbin = np.arange(lonmin, lonmax, deltalon)
+    else:
+        # Determine the extent of the domain from the particles' position
+        [...]
+        
+    return lonbin, latbin
 ```
 
 <p>The quadtree class implementation is found in the following Listing:</p>
