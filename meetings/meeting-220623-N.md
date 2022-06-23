@@ -138,7 +138,8 @@ for key, value in oceandrift_config.items():
 
 As a consequence, there is no need to check the _run_ script anymore before running a computation, everything happens in the _setup_ script.
 
-- New terraim maps, with a legend, a scale, a compass and a frame. The aspect ratio is frozen to keep elements in place.
+- New terrain maps, with a legend, a scale, a compass and a frame. The aspect ratio is frozen to keep elements in place. The domain extent specified by the user is referred to as 'Domain' in the legend and the area outside this domain is whitened on the map.
+
 <p align="center">
   <img src="/docs/meeting/220623/concentration_0330.png" style="height:600px">
 </p> 
