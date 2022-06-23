@@ -51,7 +51,7 @@ where Azamethiphos has a half-life of 8.9 days and Deltamethrin has an infinite 
 Duplicate the chemical (here Azamethiphos) and give it a different name with a suffix '\_X' where _X_ is an index ranging between 1 and 9.
 Then, create a specific treatment for each farm that uses these chemicals (see below).
 
-NB: On concentration maps and plots, the suffix could be removed.
+NB: On concentration maps and plots, the underscore could be easily be replaced with the mention 'origin marker' as 'Azamethiphos, marker 1', etc.
 
 ```python
 # Loch name
