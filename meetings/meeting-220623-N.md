@@ -54,6 +54,9 @@ Then, create a specific treatment for each farm that uses these chemicals define
 NB: On concentration maps and plots, the suffix could be removed.
 
 ```python
+# Loch name
+loch = UndefinedLoch(name='Firth of Clyde')
+
 # Chemicals used
 chemicals = [Azamethiphos(name="Azamethiphos_1", half_life=8.9, Loch=loch, input_time_units='day'),
              Azamethiphos(name="Azamethiphos_2", half_life=8.9, Loch=loch, input_time_units='day']
