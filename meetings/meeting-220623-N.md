@@ -76,7 +76,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
     - particles seeded on the seafloor  
     - particles' lon/lat/z saved to file if marked as active  
     - compute nactive / (nactive + nstranded)  
-    - compute _z'_mean  
+    - compute mean(_z'_)   
     - user updates `Loch` in _setup_  
         ```python
         # Loch name
