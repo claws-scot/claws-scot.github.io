@@ -121,7 +121,7 @@ At t slightly greater than 'flushing time':
 To be compared against PARTRAC's report:
 
 <p align="center" style="border-style:solid; border:2; border-color:black">
-  <img src="/docs/meeting/220623/PARTRAC-nparticlesseries.png" style="width:400px">
+  <img src="/docs/meeting/220623/PARTRAC-nparticlesseries.png" style="width:500px">
 </p>  
 
 NB: careful about the semi-log scale, I will fix that.
