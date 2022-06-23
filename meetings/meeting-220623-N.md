@@ -54,7 +54,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
     
 
 &#9989; Create hydrodynamics solution file for Loch Long over a period of 10+ days (slightly longer time than the flushing time predicted by PARTRAC)  
-&#9989; Derive tidal range _R'_ from the hydrodynamics simulation: 2.1 m  
+&#9989; Derive tidal range _R'_ from the hydrodynamics simulation: 2.7 m  
 &#9989; Write user scripts  
   * _setup_:  
   * _pre_:  
