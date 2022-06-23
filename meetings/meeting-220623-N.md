@@ -101,7 +101,8 @@ farms = [SalmonFarm(GreatCumbrae(),
                                 tarpaulin_radius=19.,
                                 seeding_times=[0., 3., 6., 9.],
                                 nparticles=10000,
-                                Chemicals=[chemicals[0], chemicals[1], chemicals[1], chemicals[0]],
+                                Chemicals=[chemicals[0], chemicals[1],
+                                           chemicals[1], chemicals[0]],
                                 name="Sea Lice Treatment",
                                 input_time_units='day')]
 ```
