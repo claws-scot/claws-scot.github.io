@@ -51,7 +51,7 @@ where Azamethiphos has a half-life of 8.9 days and Deltamethrin has an infinite 
 Duplicate the chemical (here Azamethiphos) and give it a different name with a suffix '\_X' where _X_ is an index ranging between 1 and 9.
 Then, create a specific treatment for each farm that uses these chemicals (see below, seeding from farms at Little Cumbrae and Great Cumbrae can be analysed separately).
 
-NB: On concentration maps and plots, the underscore could be easily be replaced with the mention 'origin marker' as 'Azamethiphos, marker 1', etc.
+NB1: On concentration maps and plots, the underscore could be easily be replaced with the mention 'origin marker' as 'Azamethiphos, marker 1', etc.
 
 ```python
 # Loch name
@@ -71,13 +71,13 @@ treatments = [\
     BathMedicine(tarpaulin_height=3.,
                  tarpaulin_radius=19.,
                  seeding_times=seeding_times,
-                 nparticles=600,
+                 nparticles=10000,
                  Chemicals=chemicals[0],
                  name="Sea Lice Treatment"),
     BathMedicine(tarpaulin_height=3.,
                  tarpaulin_radius=19.,
                  seeding_times=seeding_times,
-                 nparticles=600,
+                 nparticles=10000,
                  Chemicals=chemicals[1],
                  name="Sea Lice Treatment")]             
 
@@ -87,6 +87,24 @@ farms = [SalmonFarm(GreatCumbrae(), treatments[0]),
 ```
 
 All plots and contours will be prepended the name of the chemical, Azamethiphos\_X, where _X_ refers to the origin marker.
+
+NB2: a farm can use multiple chemicals as well. Here Azamethiphos is dispersed at t = 0 h and t = 9 h, while Deltamethrin is used at t = 3 h and t = 6 h following the initial treatment.
+
+```python
+# Chemicals used
+chemicals = [Azamethiphos(half_life=8.9, Loch=loch, input_time_units='day'),
+             Deltamethrin(Loch=loch)]
+
+# Farms             
+farms = [SalmonFarm(GreatCumbrae(),
+                    BathMedicine(tarpaulin_height=3.,
+                                tarpaulin_radius=19.,
+                                seeding_times=[0., 3., 6., 9.],
+                                nparticles=10000,
+                                Chemicals=[chemicals[0], chemicals[1], chemicals[1], chemicals[0]],
+                                name="Sea Lice Treatment",
+                                input_time_units='day')]
+```
 
 &nbsp;
 <h5>B2. NEWEST ADDITIONS</h5>
