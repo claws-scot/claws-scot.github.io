@@ -129,7 +129,7 @@ oceandrift_config = {
 }
 ```
 
-and the _run_ script can be simplied to:  
+and the _run_ script is simplied to:  
 ```python
 # Set OpenDrift configuration
 for key, value in oceandrift_config.items():
