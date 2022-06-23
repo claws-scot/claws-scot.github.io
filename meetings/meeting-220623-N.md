@@ -80,6 +80,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
     - derive ECE' and NEI' from _A/A'_, _V/V'_, _R/R'_ and _Tf/Tf'_ 
 
 Long Long (including Loch Goil and the upper basin of Loch Long)  
+12830 active particles  
 Initially:    
 <p align="center">
   <img src="/docs/meeting/220623/concentration_0000.png" style="height:600px">
