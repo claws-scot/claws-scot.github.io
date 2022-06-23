@@ -97,7 +97,7 @@ Long Long (including Loch Goil and the upper basin of Loch Long)
 12830 active particles  
 Initially:    
 <p align="center">
-  <img src="/docs/meeting/220623/concentration_0000.png" style="height:600px">
+  <img src="/docs/meeting/220623/concentration_0000.png" style="width:600px">
 </p> 
 At t slightly greater than 'flushing time':
 <p align="center">
