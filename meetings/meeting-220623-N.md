@@ -57,6 +57,20 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 &#9989; Derive tidal range _R'_ from the hydrodynamics simulation: 2.7 m  
 &#9989; Write user scripts  
   * _setup_:  
+    - new chemical, `Dye`, and treatment, `Dyeing`:
+      ```python
+      # Chemicals used
+      chemicals = [Dye()]
+
+      # Weight of a single particle (grams)
+      particle_weight_grams = 1.
+
+      # Farms
+      farms = [SalmonFarm(Ardentinny(),
+                          Dyeing(nparticles=30000,
+                                 Chemicals=chemicals[0]))]
+      ```
+    - further improvements would consist in (a) creating another child object of the `Farm` class to avoid using `SalmonFarm`, and (b) allowing site locations, eg, `Ardentinny()` as well as control areas, eg, to be passed as an argument to `Farm`  
   * _pre_:  
     - evenly-spaced particles in the GeoJSON polygon  
     - particles seeded on the seafloor  
