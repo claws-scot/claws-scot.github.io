@@ -89,6 +89,13 @@ for key, value in oceandrift_config.items():
 
 As a consequence, there is no need to check the _run_ script anymore before running a computation, everything happens in the _setup_ script.
 
+- New terraim maps, with a legend, a scale, a compass and a frame. The aspect ratio is frozen to keep elements in place.
+<p align="center">
+  <img src="/docs/meeting/220623/concentration_0330.png" style="height:600px">
+</p> 
+
+- For all simulations, a `media` folder is created and images and videos are created inside this directory.
+
 &nbsp;
 <h5>B3. REPORT UPDATE</h5>
 - Version 2?
