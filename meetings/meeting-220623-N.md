@@ -49,7 +49,7 @@ where Azamethiphos has a half-life of 8.9 days and Deltamethrin has an infinite 
 - I use a single chemical and I want to use OpenDrift's origin marker to track seedings from different farms (or same farm different time) as originally intended, what do I do?  
 
 Duplicate the chemical (here Azamethiphos) and give it a different name with a suffix '\_X' where _X_ is an index ranging between 1 and 9.
-Then, create a specific treatment for each farm that uses these chemicals (see below).
+Then, create a specific treatment for each farm that uses these chemicals (see below, seeding from farms at Little Cumbrae and Great Cumbrae can be analysed separately).
 
 NB: On concentration maps and plots, the underscore could be easily be replaced with the mention 'origin marker' as 'Azamethiphos, marker 1', etc.
 
