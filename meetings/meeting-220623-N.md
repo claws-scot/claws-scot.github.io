@@ -128,7 +128,7 @@ NB: careful about the semi-log scale, I will fix that.
 
 
 For an existing biomass of 500 tonnes,  
-Using Loch Long's data from the PARTRAC report (already verified in W1.):   
+Using Loch Long's data from the PARTRAC report (already verified in <a href="https://claws-scot.github.io/meetings/meeting-220623-N/">meeting-220623-N</a>):   
 
 ```python
 Loch Long's flushing time (day) = 9.57
