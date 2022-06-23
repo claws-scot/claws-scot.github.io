@@ -121,6 +121,9 @@ Salmon Farm's ECE (umol/L) = 0.043954
 Salmon Farm's nutrient enhancement index = 1
 ```
 
+<h5>N4. FUTURE WORK</h5>
+ - Suggestions?
+ - Preliminary discussion about the Waste (W) module?
 
 
 &nbsp;
