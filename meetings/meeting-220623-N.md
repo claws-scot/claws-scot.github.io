@@ -43,7 +43,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 
 &#9634; Calculate the Loch's area, _A'_, and volume, _V'_, using an approximate method:
   + _A'_: area GeoJSON polygon * nactive / (nactive + nstranded)
-  + _V'_: seeding on the seafloor, get depth _z'_ for all active particles. Because of particles are equally spaced, _V'_ ~ _A'_ * mean(_z'_) mean, where mean(_z'_) is the mean depth.
+  + _V'_: seeding on the seafloor, get depth _z'_ for all active particles. Because of particles are equally spaced, _V'_ ~ _A'_ * mean(_z'_), where mean(_z'_) is the mean depth.
       ```sh
         z='seafloor+0'
       ```
