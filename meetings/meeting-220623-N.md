@@ -41,7 +41,7 @@ In the user scripts, this tranlates to:
 chemicals = [Azamethiphos(half_life=8.9, Loch=loch, input_time_units='day'),
              Deltamethrin(Loch=loch)]
              
-o.set_config'drift:half_life': [chem.half_life('s') for chem in chemicals])
+o.set_config('drift:half_life': [chem.half_life('s') for chem in chemicals])
 ```
 
 where Azamethiphos has a half-life of 8.9 days and Deltamethrin has an infinite half-life (does not decay).
