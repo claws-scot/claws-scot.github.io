@@ -143,7 +143,7 @@ As a consequence, there is no need to check the _run_ script anymore before runn
 The aspect ratio is frozen to keep elements in place. The domain extent specified by the user is referred to as 'Domain' in the legend and the area outside this domain is whitened on the map.
 
 <p align="center">
-  <img src="/docs/meeting/220623/sb_delta_concentration_0330.png" style="height:600px">
+  <img src="/docs/meeting/220623/sb_delta_concentration_0330.png" style="width:600px">
 </p> 
 
 - For all simulations, a `media` folder is created and images and videos are created inside this directory.

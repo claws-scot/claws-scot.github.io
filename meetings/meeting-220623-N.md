@@ -101,11 +101,11 @@ Initially:
 </p> 
 At t slightly greater than 'flushing time':
 <p align="center">
-  <img src="/docs/meeting/220623/concentration_0360.png" style="height:600px">
+  <img src="/docs/meeting/220623/concentration_0360.png" style="width:600px">
 </p> 
 
 <p align="center">
-<video height="600" autoplay controls loop>
+<video width="600" autoplay controls loop>
   <source src="/docs/meeting/220623/concentration.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> 
@@ -115,7 +115,7 @@ At t slightly greater than 'flushing time':
 <h5>N3. FLUSHING TIME & ECE COMPARISON</h5>
 
 <p align="center">
-  <img src="/docs/meeting/220623/flushing_time.png" style="height:350px">
+  <img src="/docs/meeting/220623/flushing_time.png" style="width:400px">
 </p>  
 
 
