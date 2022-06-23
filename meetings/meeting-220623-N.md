@@ -118,6 +118,15 @@ At t slightly greater than 'flushing time':
   <img src="/docs/meeting/220623/flushing_time.png" style="width:400px">
 </p>  
 
+To be compared against PARTRAC's report:
+
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/220623/PARTRAC-nparticlesseries.png" style="width:400px">
+</p>  
+
+NB: careful about the semi-log scale, I will fix that.
+
+
 For an existing biomass of 500 tonnes,  
 Using Loch Long's data from the PARTRAC report (already verified in W1.):   
 
@@ -139,6 +148,12 @@ Salmon Farm's ECE (ug/L) = 0.615362
 Salmon Farm's ECE (umol/L) = 0.043954
 Salmon Farm's nutrient enhancement index = 1
 ```
+
+To be compared against PARTRAC's report:
+
+<p align="center" style="border-style:solid; border:2; border-color:black">
+  <img src="/docs/meeting/excel-approx-formulas.png" style="height:300px">
+</p>
 
 &nbsp;
 <h5>N4. FUTURE WORK</h5>
