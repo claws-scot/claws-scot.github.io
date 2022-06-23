@@ -28,7 +28,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 &nbsp;
 <h5>N2. BATHYMETRY AND SHORELINES</h5>
 
-  - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model and covers the NE Atlantic region. 1 arcsecond ~ 17.8 m at 55 deg. latitude  
+  - EMODnet offer a 1/16 arcminute (3.75 arcseconds) digital elevation model and covers the NE Atlantic region. 3.75 arcsecond ~ 66.8 m at 55 deg. latitude  
   
 &#9989; Download the FOC bathymetry and shoreline data  
 &#9989; Download the EMODnet bathymetry and shoreline data  
