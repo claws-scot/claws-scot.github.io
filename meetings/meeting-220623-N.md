@@ -61,7 +61,7 @@ All plots and contours will be prepended the name of the chemical, Azamethiphos\
 &nbsp;
 <h5>B2. NEWEST ADDITIONS</h5>
 
-- The OpenDrift configuration is now set in the _setup_ script:
+- The OpenDrift configuration is now set in the _setup_ script using the following dictionary:
 
 ```python
 # ---------------------------- OCEANDRIFT CONFIG ----------------------------- #
@@ -80,12 +80,14 @@ oceandrift_config = {
 }
 ```
 
-and the _run_ script becomes:  
+and the _run_ script can be simplied to:  
 ```python
 # Set OpenDrift configuration
 for key, value in oceandrift_config.items():
     o.set_config(key, value)
 ```
+
+As a consequence, there is no need to check the _run_ script anymore before running a computation, everything happens in the _setup_ script.
 
 &nbsp;
 <h5>B3. REPORT UPDATE</h5>
