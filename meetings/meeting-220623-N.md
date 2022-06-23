@@ -17,17 +17,17 @@ nav-short: true
 <h5>B1. HALF-LIVES</h5>
 - Code verification for several half-lives: exponential decay test revisited
 
-One half-life set to 25 hours:
+One half-life set to 25 hours (1 seeding of 1000 particles):
 <p align="center">
   <img src="/docs/meeting/220623/halflife_particles_status.png" style="height:300px"><img src="/docs/meeting/220623/halflife_particles_plot.png" style="height:300px">
 </p>
 
-Two half-lives set to 25 hours and 12.5 hours:
+Two half-lives set to 25 hours and 12.5 hours (2 seedings of 1000 particles):
 <p align="center">
   <img src="/docs/meeting/220623/halflives_particles_status.png" style="height:300px"><img src="/docs/meeting/220623/halflives_particles_plot.png" style="height:300px">
 </p> 
 
-- In OceanDrift, the origin marker of each particle is used to select the chemical half-life in the input list of half-lives, `self.get_config('drift:half_life')`:
+- In OceanDrift, the origin marker of each particle is now used to select the chemical half-life in the input list of half-lives, `self.get_config('drift:half_life')`:
 
 ```python
 hl = self.get_config('drift:half_life')
@@ -46,14 +46,17 @@ o.set_config('drift:half_life': [chem.half_life('s') for chem in chemicals])
 
 where Azamethiphos has a half-life of 8.9 days and Deltamethrin has an infinite half-life (does not decay).
 
-- I want to use OpenDrift's origin marker to but I use a single chemical, what do I do?
-Duplicate the chemical (Azamethiphos) and give it a different name, using the suffix '\_X' where X is an index rangign between 1 and 9.
-(On the concentration maps and plots, the suffix could be removed.)
+- I use a single chemical and I want to use OpenDrift's origin marker to track seedings from different farms (or same farm different time) as originally intended, what do I do?  
+Duplicate the chemical (here Azamethiphos) and give it a different name using the suffix '\_X' where _X_ is an index ranging between 1 and 9.  
+
+NB: On the concentration maps and plots, the suffix could be removed.
 
 ```python
 chemicals = [Azamethiphos(name="Azamethiphos_1", half_life=8.9, Loch=loch, input_time_units='day'),
              Azamethiphos(name="Azamethiphos_2", half_life=8.9, Loch=loch, input_time_units='day']
 ```
+
+All plots and contours will be prepended the name of the chemical, Azamethiphos\_X, where _X_ refers to the origin marker.
 
 &nbsp;
 <h5>B2. NEWEST ADDITIONS</h5>
