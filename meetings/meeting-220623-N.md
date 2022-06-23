@@ -47,13 +47,38 @@ o.set_config('drift:half_life': [chem.half_life('s') for chem in chemicals])
 where Azamethiphos has a half-life of 8.9 days and Deltamethrin has an infinite half-life (does not decay).
 
 - I use a single chemical and I want to use OpenDrift's origin marker to track seedings from different farms (or same farm different time) as originally intended, what do I do?  
-Duplicate the chemical (here Azamethiphos) and give it a different name using the suffix '\_X' where _X_ is an index ranging between 1 and 9.  
 
-NB: On the concentration maps and plots, the suffix could be removed.
+Duplicate the chemical (here Azamethiphos) and give it a different name using the suffix '\_X' where _X_ is an index ranging between 1 and 9.
+Then, create a specific treatment for each farm that uses these chemicals defined (see below).
+
+NB: On concentration maps and plots, the suffix could be removed.
 
 ```python
+# Chemicals used
 chemicals = [Azamethiphos(name="Azamethiphos_1", half_life=8.9, Loch=loch, input_time_units='day'),
              Azamethiphos(name="Azamethiphos_2", half_life=8.9, Loch=loch, input_time_units='day']
+             
+# Seeding times (hours)
+seeding_times = [0., 3., 6., 9., 24., 27., 30., 48., 51., 54.]
+
+# Type of treatments
+treatments = [\
+    BathMedicine(tarpaulin_height=3.,
+                 tarpaulin_radius=19.,
+                 seeding_times=seeding_times,
+                 nparticles=600,
+                 Chemicals=chemicals[0],
+                 name="Sea Lice Treatment"),
+    BathMedicine(tarpaulin_height=3.,
+                 tarpaulin_radius=19.,
+                 seeding_times=seeding_times,
+                 nparticles=600,
+                 Chemicals=chemicals[1],
+                 name="Sea Lice Treatment")]             
+
+# Farms
+farms = [SalmonFarm(GreatCumbrae(), treatments[0]),
+         SalmonFarm(LittleCumbrae(), treatments[1])]
 ```
 
 All plots and contours will be prepended the name of the chemical, Azamethiphos\_X, where _X_ refers to the origin marker.
