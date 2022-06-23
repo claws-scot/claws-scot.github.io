@@ -115,7 +115,7 @@ At t slightly greater than 'flushing time':
 <h5>N3. FLUSHING TIME & ECE COMPARISON</h5>
 
 <p align="center">
-  <img src="/docs/meeting/220623/flushing_time.png" style="width:400px">
+  <img src="/docs/meeting/220623/flushing_time.png" style="width:500px">
 </p>  
 
 To be compared against PARTRAC's report:
