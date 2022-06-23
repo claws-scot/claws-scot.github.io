@@ -44,7 +44,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 &#9634; Calculate the Loch's area, _A'_, and volume, _V'_, using an approximate method:
   + _A'_: area GeoJSON polygon * nactive / (nactive + nstranded)
   + _V'_: seeding on the seafloor, get depth _z'_ for all active particles. Because of particles are equally spaced, _V'_ ~ _A'_ * mean(_z'_), where mean(_z'_) is the mean depth.
-      ```sh
+      ```python
         z='seafloor+0'
       ```
       <div style="line-height:50%;">
@@ -53,7 +53,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
   + Graph _A'/V'_ vs. nseeds  
     
 
-&#9989; Create hydrodynamics solution file for Loch Long over a period of 10+ days (slightly longer time than the flushing time predicted by PARTRAC)  
+&#9989; Create hydrodynamics solution file for Loch Long over a period of 15+ days (slightly longer time than the flushing time predicted by PARTRAC)  
 &#9989; Derive tidal range _R'_ from the hydrodynamics simulation: 2.7 m  
 &#9989; Write user scripts  
   * _setup_:  
