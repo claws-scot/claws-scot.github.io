@@ -70,7 +70,7 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
                           Dyeing(nparticles=30000,
                                  Chemicals=chemicals[0]))]
       ```
-    - further improvements would consist in (a) creating another child object of the `Farm` class to avoid using `SalmonFarm`, and (b) allowing site locations, eg `Ardentinny()`, as well as control areas, eg `control_area = 'loch_Long.json'`, to be passed as an argument to `Farm`  
+    - further improvements would consist in (a) creating another child object of the `Farm` class to avoid using `SalmonFarm`, and (b) allowing site locations, eg `Ardentinny()`, as well as control areas, eg `'loch_Long.json'`, to be passed as an argument to `Farm`  
   * _pre_:  
     - evenly-spaced particles in the GeoJSON polygon  
     - particles seeded on the seafloor  
