@@ -8,7 +8,7 @@ nav-short: true
 ## Bath treatment module (B)
 
 <h5>GOALS</h5> 
-- 
+- Half-lives
 - Newest additions
 - Report update
 
@@ -43,6 +43,15 @@ o.set_config'drift:half_life': [chem.half_life('s') for chem in chemicals])
 ```
 
 where Azamethiphos has a half-life of 8.9 days and Deltamethrin has an infinite half-life (does not decay).
+
+- I want to use OpenDrift's origin marker to but I use a single chemical, what do I do?
+Duplicate the chemical (Azamethiphos) and give it a different name, using the suffix '\_X' where X is an index rangign between 1 and 9.
+(On the concentration maps and plots, the suffix could be removed.)
+
+```python
+chemicals = [Azamethiphos(name="Azamethiphos_1", half_life=8.9, Loch=loch, input_time_units='day'),
+             Azamethiphos(name="Azamethiphos_2", half_life=8.9, Loch=loch, input_time_units='day']
+```
 
 
 <h5>B2. NEWEST ADDITIONS</h5>
