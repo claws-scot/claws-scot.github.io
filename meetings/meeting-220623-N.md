@@ -36,14 +36,14 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 
 &nbsp;
 <h5>N3. OPENDRIFT</h5>
-&#9989; Seed particles using a GeoJSON string: <a href="http://geojson.io/">geojson.io</a>. A polygon is drawn around a loch with as many edges as necessary:
+&#9989; Seed particles using a GeoJSON string: <a href="http://geojson.io/">geojson.io</a>. A polygon is drawn around a loch with as many edges as necessary. The current polygon could be improved to increase the ratio of active to stranded particles:
 <p align="center">
   <img src="/docs/meeting/geoJSON_2.png" style="height:300px">
 </p>  
 
 &#9634; Calculate the Loch's area, _A'_, and volume, _V'_, using an approximate method:
   + _A'_: area GeoJSON polygon * nactive / (nactive + nstranded)
-  + _V'_: seed on the sea floor, get _z_ for all active particles and neighbour particles to create polygons whose base lies at sea level  
+  + _V'_: seeding on the seafloor, get depth _z'_ for all active particles. Because of particles are equally spaced, _V'_ ~= _A'_ * _z'_mean, where _z'_mean is the mean depth.
       ```sh
         z='seafloor+0'
       ```
@@ -55,32 +55,66 @@ Primed quantities are quantities extracted from OpenDrift simulations.</p>
 
 &#9989; Create hydrodynamics solution file for Loch Long over a period of 10+ days (slightly longer time than the flushing time predicted by PARTRAC)  
 &#9989; Derive tidal range _R'_ from the hydrodynamics simulation: 2.1 m  
-&#9989; Write user scripts and run an Opendrift simulation      
- - evenly-spaced particles, random depth, control number of particles  
- - seeds on land aren't moved back into the loch:  
-    ```sh
-    o.set_config('seed:ocean_only', False)
-    ```
-    <div style="line-height:50%;">
-        <br>
-    </div> 
-    
-&#9989; Draw nparticles vs. time, get _Tf'_   
-&#9634; Derive ECE' and NEI' from _A/A'_, _V/V'_, _R/R'_ and _Tf'_  
+&#9989; Write user scripts  
+  * _setup_:  
+  * _pre_:  
+    - evenly-spaced particles in the GeoJSON polygon  
+    - particles seeded on the seafloor  
+    - particles' lon/lat/z saved to file if marked as active  
+    - compute nactive / (nactive + nstranded)  
+    - compute _z'_mean  
+    - user updates `Loch` in _setup_  
+        ```python
+        # Loch name
+        loch = Loch(name="Loch Long", area=45.3, tidal_range=2.7, mean_depth=-38.005,
+                    reference="Hydrodynamics and CLAWS-pre (using 30k seeds)")
+        ```    
+  * _run_:  
+    - loads active particles from _pre_ (saves disk space & comp. time)  
+    - initial depth of a particle is a random number in [-z_local_water_column, 0]
+    - rest as usual  
+  * _post_:  
+    - plot concentration on terrain map  
+    - plot flushing time  
+    - save time series of number of particles to file  
+    - derive ECE' and NEI' from _A/A'_, _V/V'_, _R/R'_ and _Tf/Tf'_ 
 
-Using 252 active particles seeded uniformly in lon/lat and with a random initial depth comprised between [-10, 0] m (no seabed):    
-- At t = 0:
+Long Long (including Loch Goil and the upper basin of Loch Long)  
+Initially:    
 <p align="center">
-  <img src="/docs/meeting/concentration_0000.png" style="height:500px">
+  <img src="/docs/meeting/220623/concentration_0000.png" style="height:600px">
 </p> 
-- At t slightly greater than 'flushing time':
+At t slightly greater than 'flushing time':
 <p align="center">
-  <img src="/docs/meeting/concentration_2280.png" style="height:500px">
+  <img src="/docs/meeting/concentration_0360.png" style="height:600px">
 </p> 
-- nparticles vs. time:
+    
+
+<h5>N3. FLUSHING TIME & ECE COMPARISON</h5>
+
 <p align="center">
-  <img src="/docs/meeting/flushing_time.png" style="height:350px">
-</p>
+  <img src="/docs/meeting/220623/flushing_time.png" style="height:350px">
+</p>  
+
+
+
+```python
+Loch Long's flushing time (day) = 9.57
+Existing biomass - eval.:
+Salmon Farm's ECE (kg/m^3) = 3.595962e-07
+Salmon Farm's ECE (ug/L) = 0.359596
+Salmon Farm's ECE (umol/L) = 0.025685
+Salmon Farm's nutrient enhancement index = 1
+
+Loch Long's flushing time (day) = 16.05
+Existing biomass - comp.:
+Salmon Farm's ECE (kg/m^3) = 6.153615e-07
+Salmon Farm's ECE (ug/L) = 0.615362
+Salmon Farm's ECE (umol/L) = 0.043954
+Salmon Farm's nutrient enhancement index = 1
+```
+
+
 
 &nbsp;
 <h5>HISTORY</h5>  
