@@ -155,7 +155,7 @@ The aspect ratio is frozen to keep elements in place. The domain extent specifie
 
 &nbsp;
 <h5>HISTORY</h5>
-  - Meeting, June 23rd (N): <a href="https://claws-scot.github.io/meetings/meeting-220623-N/">https://claws-scot.github.io/meetings/meeting-220623-N/</a>  
-  - Meeting, June 23rd (B): <a href="https://claws-scot.github.io/meetings/meeting-220623-B/">https://claws-scot.github.io/meetings/meeting-220623-B/</a>  
-  - Progress, June 21st (N): <a href="https://claws-scot.github.io/meetings/progress-220621-N/">https://claws-scot.github.io/meetings/progress-220621/</a>  
-  - Meeting, June 13th (N): <a href="https://claws-scot.github.io/meetings/meeting-220613-N/">https://claws-scot.github.io/meetings/meeting-220613-N/</a>  
+  - Meeting, June 23rd (N): <a href="https://claws-scot.github.io/meetings/meeting-220623-N/">meeting-220623-N</a>  
+  - Meeting, June 23rd (B): <a href="https://claws-scot.github.io/meetings/meeting-220623-B/">meeting-220623-B</a>  
+  - Progress, June 21st (N): <a href="https://claws-scot.github.io/meetings/progress-220621-N/">progress-220621</a>  
+  - Meeting, June 13th (N): <a href="https://claws-scot.github.io/meetings/meeting-220613-N/">meeting-220613-N</a>  
