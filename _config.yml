@@ -25,12 +25,11 @@ author: CLAWS
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-#  Installation: "installation"
   Documentation: "reports"
-#  History: "history"
   Gallery: "gallery"
-#  Contribute: "contribute"
   About: "about"
+#  Installation: "installation"
+#  Contribute: "contribute"
 # License: "license"
 
 # --- Logo --- #
