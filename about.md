@@ -44,10 +44,10 @@ The CLAWS developers would like to express their sincere gratitude to John Aitch
 
 **Enquiries: mtscfd@gmail.com or visit [mts-cfd.com](https://www.mts-cfd.com/)**
 
-This e-mail address may be used if
-  - you would like to [contribute](https://claws-scot.github.io/contribute/)
-  - you need support in the form of consulting services   
+<!--This e-mail address may be used if-->
+<!--  - you would like to [contribute](https://claws-scot.github.io/contribute/)-->
+<!--  - you need support in the form of consulting services   -->
 
-This e-mail address should not be used to
-  - report bugs, the [Issues](https://github.com/claws-scot/CLAWS/issues) page is there for this purpose  
-  - engage in group discussions or lay out a new collaborative project, please visit the dedicated [Discussions](https://github.com/claws-scot/CLAWS/discussions) and [Projects](https://github.com/claws-scot/CLAWS/projects?type=beta) pages on Github
+<!--This e-mail address should not be used to-->
+<!--  - report bugs, the [Issues](https://github.com/claws-scot/CLAWS/issues) page is there for this purpose  -->
+<!--  - engage in group discussions or lay out a new collaborative project, please visit the dedicated [Discussions](https://github.com/claws-scot/CLAWS/discussions) and [Projects](https://github.com/claws-scot/CLAWS/projects?type=beta) pages on Github-->
