@@ -23,7 +23,6 @@ Some of the following guidelines are taken from [opendrift.github.io/install](ht
     conda config --add channels conda-forge
     conda env create -f environment.yml
     conda activate opendrift
-    pip install --no-deps -e .
     ```
     <div style="line-height:50%;">
         <br>
