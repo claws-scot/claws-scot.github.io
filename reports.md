@@ -24,5 +24,6 @@ Farms, Part 2. Bath Treatments Model," Technical report, pp. 1-28, <b>2023</b> &
 <p><b><i>Nutrients</i></b> &nbsp; | &nbsp; T. Scanlon and V. Casseau, "CLAWS – Chemicals Lice and Waste from Salmon
 Farms, Part 3. Nutrients Model," Technical report, pp. 1-47, <b>2023</b> &nbsp; <a href="/docs/validation_reports/CLAWS_3_Nutrients_Module.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
 
-<p><b><i>Waste</i></b> &nbsp; | &nbsp; T. Scanlon, V. Casseau and M. Stickland, "CLAWS – Chemicals Lice and Waste from Salmon
-Farms, Part 4. Waste Model," Technical report, pp. 1-47, <b>2023</b> &nbsp; <a href="/docs/validation_reports/CLAWS_4_Waste_Module.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
+<p><b><i>Hydrodynamics</i></b> &nbsp; | &nbsp; T. Scanlon and M. Stickland, "Solent Hydrodynamics Model Validation," Technical report, pp. 1-31, <b>2024</b> &nbsp; <a href="/docs/validation_reports/Solent_Hydrodynamics_Model_Validation.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
+
+<p><b><i>Hydrodynamics</i></b> &nbsp; | &nbsp; T. Scanlon and M. Stickland, "Blackwater and Colne Estuaries - Hydrodynamics Model Validation," Technical report, pp. 1-36, <b>2025</b> &nbsp; <a href="/docs/validation_reports/Blackwater_and_Colne_Estuaries_Hydrodynamics_Model_Validation.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
