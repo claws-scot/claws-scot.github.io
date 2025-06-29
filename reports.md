@@ -35,4 +35,4 @@ Farms, Part 4. Waste Model," Technical report, pp. 1-47, <b>2023</b> &nbsp; <a h
 
 <p><b><i>E. coli</i></b> &nbsp; | &nbsp; T. Scanlon and M. Stickland, "A Hydrodynamic and Biological (E. coli) Model of the Firth of Forth," Technical report, pp. 1-20, <b>2025</b> &nbsp; <a href="/docs/validation_reports/Firth_of_Forth_Hydrodynamic_and_Biological_Ecoli_Modelling_Final_Version.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
 
-<p><b><i>E. coli</i></b> &nbsp; | &nbsp; T. Scanlon and M. Stickland, "Loch Aline Oyster Larvae Modelling," Technical report, pp. 1-22, <b>2025</b> &nbsp; <a href="/docs/validation_reports/Loch_Aline_Oyster_Larvae_Modelling_Report.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
+<p><b><i>Oyster Larvae</i></b> &nbsp; | &nbsp; T. Scanlon and M. Stickland, "Loch Aline Oyster Larvae Modelling," Technical report, pp. 1-22, <b>2025</b> &nbsp; <a href="/docs/validation_reports/Loch_Aline_Oyster_Larvae_Modelling_Report.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
